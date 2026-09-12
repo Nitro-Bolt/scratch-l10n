@@ -4,17 +4,6 @@ on:
   push:
     branches:
       - develop
-    paths:
-      - editor/**
-      - lib/**
-      - overrides/**
-      - scripts/**
-      - sources/**
-      - src/**
-      - package.json
-      - pnpm-lock.yaml
-      - turbowarp-translations.json
-      - webpack.config.js
   workflow_dispatch:
     inputs: {}
 
