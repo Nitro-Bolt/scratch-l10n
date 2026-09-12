@@ -24,8 +24,8 @@ Push English source strings to Transifex. Usage:
   the Localization page on the GUI wiki for information about setting up Transifex.
 `;
 
-// Exit if missing arguments or TX_TOKEN
-if (args.length < 3 || !process.env.TX_TOKEN) {
+// Authentication is validated by lib/transifex, including .tx_token support.
+if (args.length < 3) {
     process.stdout.write(usage);
     process.exit(1);
 }
@@ -53,6 +53,9 @@ const getResourceType = (project, resource) => {
         }
         // everything else is CHROME I18N JSON
         return 'CHROME';
+    }
+    if (project === 'nitrobolt') {
+        return resource === 'blocks' ? 'KEYVALUEJSON' : 'CHROME';
     }
     if (project === 'scratch-videos') {
         // all the resources are srt files
@@ -90,7 +93,7 @@ const pushSource = async function () {
             name: RESOURCE,
             priority: 0, // default to normal priority
             i18nType: getResourceType(PROJECT, RESOURCE),
-            content: en
+            sourceStrings: en
         };
         await txCreateResource(PROJECT, resourceData);
         process.exitCode = 0;

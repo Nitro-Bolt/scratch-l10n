@@ -10,14 +10,14 @@ _Describe what this Pull Request does_
 
 There are two situations in which we create manual PRs to update translations:
 
-1. We don't want to wait for Travis's automatic weekly update; or,
+1. We don't want to wait for the scheduled translation update; or,
 2. We need to add a language that has become ready
 
 ### 1. Updating translations manually
 
-* [ ] Pull editor translations from Transifex with `> npm run pull:editor`
-* [ ] Pull www translations from Transifex with `> npm run pull:www`
-* [ ] Test the result with `> npm run test`
+* [ ] Pull editor translations from Transifex with `pnpm pull:editor`
+* [ ] Pull www translations from Transifex with `pnpm pull:www`
+* [ ] Test the result with `pnpm test`
 * [ ] Confirm that you see changes to files like `editor/<resource>/<lang code>.json`
 
 ### Adding a language
@@ -62,7 +62,7 @@ There are two situations in which we create manual PRs to update translations:
 * [ ] **Add language to scratchr2 settings**
     * manually update `settings/base.py` with the new language
 
-#### After scratch-l10n update is published:
+#### After @nitro-bolt/scratch-l10n is published:
 * [ ] **Update scratch-blocks dependency**
     * [ ] in `package.json`, update the version of the scratch-l10n dependency to the version number you used above
     * [ ] pull translations so that a new `Blockly.ScratchMsgs.locales["<LOCALE CODE>"]` is added to `msg/scratch_msgs.js`

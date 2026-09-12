@@ -12,5 +12,9 @@ webpack.config.js
 www
 editor
 images
+upstream
+overrides
+sources
+turbowarp-translations.json
 .github
 .tx_token

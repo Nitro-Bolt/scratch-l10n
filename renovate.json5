@@ -3,5 +3,5 @@
     "extends": [
         "github>scratchfoundation/scratch-renovate-config:js-lib-bundled"
     ],
-    "baseBranches": ["master"]
+    "baseBranches": ["develop"]
 }

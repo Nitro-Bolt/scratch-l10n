@@ -1,0 +1,46 @@
+{
+  "nb.paint.recentColors": {
+    "message": "Recent Colors",
+    "description": "Label for the recent colors component in the color picker"
+  },
+  "paint.colorPicker.customGradient": {
+    "message": "Custom Gradient",
+    "description": "Label for the custom gradient editor button"
+  },
+  "paint.modeTools.center": {
+    "message": "Center",
+    "description": "Label for the button that moves the selected objects to the center of the canvas"
+  },
+  "paint.modeTools.cut": {
+    "message": "Cut",
+    "description": "Label for the cut button"
+  },
+  "paint.modeTools.rectRadius": {
+    "message": "Rectangle Curve",
+    "description": "Label for the rectangle curve input"
+  },
+  "paint.paintEditor.filter": {
+    "message": "Filter",
+    "description": "Label for the `Filter intersections` button"
+  },
+  "paint.paintEditor.mask": {
+    "message": "Mask",
+    "description": "Label for the `Mask intersections` button"
+  },
+  "paint.paintEditor.masktools": {
+    "message": "Booleans",
+    "description": "Label for dropdown to access the masking tools"
+  },
+  "paint.paintEditor.merge": {
+    "message": "Merge",
+    "description": "Label for the `Merge objects` button"
+  },
+  "paint.paintEditor.subtract": {
+    "message": "Subtract",
+    "description": "Label for the `Subtract intersections` button"
+  },
+  "paint.paintEditor.swap": {
+    "message": "Swap",
+    "description": "Label for button that swaps the fill and stroke colors"
+  }
+}

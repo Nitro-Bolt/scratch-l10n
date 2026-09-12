@@ -1,0 +1,60 @@
+{
+  "nb.debugger.breakpoint": {
+    "message": "breakpoint"
+  },
+  "nb.debugger.clearLogs": {
+    "message": "clear logs"
+  },
+  "nb.debugger.cloneCount": {
+    "message": "clone count"
+  },
+  "nb.debugger.log": {
+    "message": "[TYPE] [MESSAGE] [COLOR]"
+  },
+  "nb.debugger.logType.error": {
+    "message": "error"
+  },
+  "nb.debugger.logType.log": {
+    "message": "log"
+  },
+  "nb.debugger.logType.warn": {
+    "message": "warn"
+  },
+  "nb.debugger.name": {
+    "message": "Debugger",
+    "description": "Name of the NitroBolt debugger extension"
+  },
+  "nb.debugger.timerCommand": {
+    "message": "[OPERATION] timer [TIMER_NAME]"
+  },
+  "nb.debugger.timerOperation.clear": {
+    "message": "clear"
+  },
+  "nb.debugger.timerOperation.delete": {
+    "message": "delete"
+  },
+  "nb.debugger.timerOperation.end": {
+    "message": "end"
+  },
+  "nb.debugger.timerOperation.start": {
+    "message": "start"
+  },
+  "nb.debugger.timerStat.average": {
+    "message": "average"
+  },
+  "nb.debugger.timerStat.max": {
+    "message": "max"
+  },
+  "nb.debugger.timerStat.min": {
+    "message": "min"
+  },
+  "nb.debugger.timerValue": {
+    "message": "[STAT] of timer [TIMER_NAME]"
+  },
+  "nb.debugger.usedMemory": {
+    "message": "used memory"
+  },
+  "nb.debugger.withColor": {
+    "message": "with color [VALUE]"
+  }
+}

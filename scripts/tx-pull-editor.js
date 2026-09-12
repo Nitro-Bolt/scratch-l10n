@@ -20,15 +20,15 @@ const usage = `
    the Localization page on the GUI wiki for information about setting up Transifex.
  `;
 
-// Fail immediately if the TX_TOKEN is not defined
-if (!process.env.TX_TOKEN || args.length < 3) {
+// Authentication is validated by lib/transifex, including .tx_token support.
+if (args.length < 3) {
     process.stdout.write(usage);
     process.exit(1);
 }
 
 import fs from 'fs';
 import path from 'path';
-import {txPull} from '../lib/transifex.js';
+import {txAvailableLanguages, txPull} from '../lib/transifex.js';
 import {validateTranslations} from '../lib/validate.js';
 import locales, {localeMap} from '../src/supported-locales.js';
 import {batchMap} from '../lib/batch.js';
@@ -51,10 +51,17 @@ const getLocaleData = async function (locale) {
 
 const pullTranslations = async function () {
     try {
-        const values = await batchMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
+        fs.mkdirSync(OUTPUT_DIR, {recursive: true});
+        const availableLanguages = await txAvailableLanguages(PROJECT);
+        const enabledLocales = Object.keys(locales).filter(locale => {
+            if (locale === 'en') return true;
+            return availableLanguages.includes(localeMap[locale] || locale);
+        });
+        const values = await batchMap(enabledLocales, CONCURRENCY_LIMIT, getLocaleData);
         const source = values.find(elt => elt.locale === 'en').translations;
         values.forEach(function (translation) {
             validateTranslations({locale: translation.locale, translations: translation.translations}, source);
+            if (translation.locale === 'en') return;
             // if translation has message & description, we only want the message
             let txs = {};
             for (const key of Object.keys(translation.translations)) {

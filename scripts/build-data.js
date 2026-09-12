@@ -46,8 +46,41 @@ import locales from '../src/supported-locales.js';
 import allUsedIds from './tw-all-used-ids.json';
 
 const MSGS_DIR = './locales/';
+const TURBOWARP_TRANSLATIONS = './turbowarp-translations.json';
+const OVERRIDES_DIR = './overrides/editor/';
+const SOURCES_DIR = './sources/';
 mkdirpSync(MSGS_DIR);
 let missingLocales = [];
+const turbowarpTranslations = JSON.parse(fs.readFileSync(TURBOWARP_TRANSLATIONS, 'utf8'));
+
+const readLayer = (directory, component, lang) => {
+    const layerPath = path.resolve(directory, component, lang + '.json');
+    try {
+        return JSON.parse(fs.readFileSync(layerPath, 'utf8'));
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return {};
+        }
+        throw error;
+    }
+};
+
+const readTurboWarpTranslations = (component, lang) => {
+    if (component !== 'interface') {
+        return {};
+    }
+    return turbowarpTranslations[lang.toLowerCase()] || {};
+};
+
+const readNitroBoltSources = (component, lang) => {
+    if (lang !== 'en') return {};
+    const source = readLayer(SOURCES_DIR, '', component);
+    const messages = {};
+    for (const id of Object.keys(source)) {
+        messages[id] = typeof source[id] === 'string' ? source[id] : source[id].message;
+    }
+    return messages;
+};
 
 const combineJson = (component) => {
     return Object.keys(locales).reduce((collection, lang) => {
@@ -61,7 +94,12 @@ const combineJson = (component) => {
                     delete langData[key];
                 }
             }
-            collection[lang] = langData;
+            collection[lang] = {
+                ...langData,
+                ...readTurboWarpTranslations(component, lang),
+                ...readNitroBoltSources(component, lang),
+                ...readLayer(OVERRIDES_DIR, component, lang)
+            };
         } catch (e) {
             missingLocales.push(component + ':' + lang + '\n');
         }

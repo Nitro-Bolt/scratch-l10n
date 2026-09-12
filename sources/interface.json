@@ -1,0 +1,430 @@
+{
+  "nb.customAccent": {
+    "message": "Accent Manager",
+    "description": "Menu item to open the custom accent manager"
+  },
+  "nb.customAccent.create": {
+    "message": "Create/Edit",
+    "description": "Button to choose to create or edit a custom accent."
+  },
+  "nb.customAccent.deleteMultiple": {
+    "message": "Delete",
+    "description": "Label for button to delete"
+  },
+  "nb.customAccent.editingExisting": {
+    "message": "You're editing an existing accent called \"{name}\"",
+    "description": "Label for name input"
+  },
+  "nb.customAccent.editingNew": {
+    "message": "A new accent will be created called \"{name}\"",
+    "description": "Label for name input"
+  },
+  "nb.customAccent.exportMultiple": {
+    "message": "Export",
+    "description": "Label for button to export"
+  },
+  "nb.customAccent.fileInput.none": {
+    "message": "No files selected.",
+    "description": "Appears in a file selector when no file is selected."
+  },
+  "nb.customAccent.fileInput.selected": {
+    "message": "Selected: {names}",
+    "description": "Appears in a file selector when a file is selected. {names} could be a string like 'fetch.js, network.js'"
+  },
+  "nb.customAccent.headerGradient": {
+    "message": "Header gradient",
+    "description": "Message that appears in custom accent prompt"
+  },
+  "nb.customAccent.headerGradientAddColor": {
+    "message": "Add color",
+    "description": "Label for button to add a color"
+  },
+  "nb.customAccent.headerGradientDegrees": {
+    "message": "degrees",
+    "description": "Label for degrees"
+  },
+  "nb.customAccent.manage": {
+    "message": "Manage",
+    "description": "Button to choose to manage custom accents."
+  },
+  "nb.customAccent.noAccents": {
+    "message": "No custom accents to show",
+    "description": "Label to show no custom accents exist"
+  },
+  "nb.customAccent.primaryLabel": {
+    "message": "For most UI components",
+    "description": "Label for color picker"
+  },
+  "nb.customAccent.primaryTitle": {
+    "message": "Primary",
+    "description": "Title for color picker"
+  },
+  "nb.customAccent.secondaryLabel": {
+    "message": "For less important menus",
+    "description": "Label for color picker"
+  },
+  "nb.customAccent.secondaryTitle": {
+    "message": "Secondary",
+    "description": "Title for color picker"
+  },
+  "nb.customAccent.selectAll": {
+    "message": "Select All",
+    "description": "Label for button to select all"
+  },
+  "nb.customAccent.selectMultiple": {
+    "message": "Select Multiple",
+    "description": "Label for button to select multiple accents"
+  },
+  "nb.customAccent.selectNone": {
+    "message": "Select None",
+    "description": "Label for button to select none"
+  },
+  "nb.customAccent.tertiaryLabel": {
+    "message": "For menus being hovered over",
+    "description": "Label for color picker"
+  },
+  "nb.customAccent.tertiaryTitle": {
+    "message": "Tertiary",
+    "description": "Title for color picker"
+  },
+  "nb.customAccent.title": {
+    "message": "Custom Accent Manager",
+    "description": "Title of custom accent manager"
+  },
+  "nb.editorSettings.addonsSection": {
+    "message": "Addons"
+  },
+  "nb.editorSettings.blockColors": {
+    "message": "Block colors"
+  },
+  "nb.editorSettings.blockColorsHelp": {
+    "message": "Customize the primary color of each block category."
+  },
+  "nb.editorSettings.blockShapePresets": {
+    "message": "Presets"
+  },
+  "nb.editorSettings.canvasSizeMultiplier": {
+    "message": "Canvas size multiplier:"
+  },
+  "nb.editorSettings.canvasSizeMultiplierHelp": {
+    "message": "How large the canvas is in the paint editor relative to the stage."
+  },
+  "nb.editorSettings.compactTabs": {
+    "message": "Compact tabs"
+  },
+  "nb.editorSettings.compactTabsHelp": {
+    "message": "Removes the text from tabs, leaving just the icon."
+  },
+  "nb.editorSettings.cornerSize": {
+    "message": "Corner size (0-300%):"
+  },
+  "nb.editorSettings.cornerSizeHelp": {
+    "message": "Controls how rounded the corners of blocks are."
+  },
+  "nb.editorSettings.customBlockShape": {
+    "message": "Customizable block shape"
+  },
+  "nb.editorSettings.customBlockShapeHelp": {
+    "message": "Adjust the padding, corner radius, notch height, and field height of blocks."
+  },
+  "nb.editorSettings.dangerZone": {
+    "message": "Danger Zone"
+  },
+  "nb.editorSettings.darkMode": {
+    "message": "Dark mode"
+  },
+  "nb.editorSettings.darkModeHelp": {
+    "message": "Turns the website dark to make it easier on the eyes."
+  },
+  "nb.editorSettings.dirty": {
+    "message": "Refresh to apply settings"
+  },
+  "nb.editorSettings.disableCompiler": {
+    "message": "Always disable compiler"
+  },
+  "nb.editorSettings.disableCompilerHelp": {
+    "message": "Disables the {APP_NAME} compiler by default. It can still be manually enabled per-project through Edit > Advanced Settings."
+  },
+  "nb.editorSettings.disableInspectBlock": {
+    "message": "Disable block inspector"
+  },
+  "nb.editorSettings.disableInspectBlockHelp": {
+    "message": "Removes the Inspect Block item from the right-click context menu on blocks."
+  },
+  "nb.editorSettings.displaySection": {
+    "message": "Display"
+  },
+  "nb.editorSettings.enableDebugger": {
+    "message": "Enable debugger"
+  },
+  "nb.editorSettings.enableDebuggerHelp": {
+    "message": "Enables a debugger panel and extension that allows you to inspect logs and monitor performance. The debugger contains the most functionality with the compiler disabled."
+  },
+  "nb.editorSettings.encodingBitRate": {
+    "message": "Encoding bit rate (kbps):"
+  },
+  "nb.editorSettings.encodingBitRateHelp": {
+    "message": "Defines the bit rate for sounds encoded in NitroBolt."
+  },
+  "nb.editorSettings.fieldHeight": {
+    "message": "Field height (75-150%):"
+  },
+  "nb.editorSettings.fieldHeightHelp": {
+    "message": "Controls the height of text inputs and dropdowns inside blocks, independent of overall padding."
+  },
+  "nb.editorSettings.generalSection": {
+    "message": "General"
+  },
+  "nb.editorSettings.help": {
+    "message": "Click for help",
+    "description": "Hover text of help icon in settings"
+  },
+  "nb.editorSettings.hiddenCategories": {
+    "message": "Visible categories"
+  },
+  "nb.editorSettings.hiddenCategoriesHelp": {
+    "message": "Choose which default categories to show or hide in the block toolbox."
+  },
+  "nb.editorSettings.hideBackpack": {
+    "message": "Hide backpack"
+  },
+  "nb.editorSettings.hideBackpackHelp": {
+    "message": "Removes the backpack from the bottom of the screen."
+  },
+  "nb.editorSettings.hideFeedback": {
+    "message": "Hide feedback button"
+  },
+  "nb.editorSettings.hideFeedbackHelp": {
+    "message": "Removes the feedback button from the top of the screen."
+  },
+  "nb.editorSettings.hidePause": {
+    "message": "Hide pause button"
+  },
+  "nb.editorSettings.hidePauseHelp": {
+    "message": "Removes the pause button from the project controls."
+  },
+  "nb.editorSettings.keymap.changeSpriteName": {
+    "message": "Change sprite name"
+  },
+  "nb.editorSettings.keymap.openBackpack": {
+    "message": "Open backpack"
+  },
+  "nb.editorSettings.keymap.openEditorSettings": {
+    "message": "Open editor settings"
+  },
+  "nb.editorSettings.keymap.openExtentions": {
+    "message": "Open extension catalog"
+  },
+  "nb.editorSettings.keymap.popups": {
+    "message": "Popups"
+  },
+  "nb.editorSettings.keymap.projectControls": {
+    "message": "Project Controls"
+  },
+  "nb.editorSettings.keymap.projectFullScreen": {
+    "message": "Toggle project full screen"
+  },
+  "nb.editorSettings.keymap.spriteSettings": {
+    "message": "Sprite Settings"
+  },
+  "nb.editorSettings.keymap.spriteVisibility": {
+    "message": "Toggle sprite visibility"
+  },
+  "nb.editorSettings.keymap.startProject": {
+    "message": "Start project"
+  },
+  "nb.editorSettings.keymap.stopProject": {
+    "message": "Stop project"
+  },
+  "nb.editorSettings.keymapSection": {
+    "message": "Keymap"
+  },
+  "nb.editorSettings.labelContrastThreshold": {
+    "message": "Label Contrast Threshold (0-255):"
+  },
+  "nb.editorSettings.labelContrastThresholdHelp": {
+    "message": "Sets how bright a block color must be before its text label switches to dark for readability. Lower values use dark text less often, higher values use dark text more often."
+  },
+  "nb.editorSettings.maxCornerRadius": {
+    "message": "Max corner radius (1x-12x):"
+  },
+  "nb.editorSettings.maxCornerRadiusHelp": {
+    "message": "Sets an upper limit on the corner radius as a multiple of the base corner size, used by round output blocks."
+  },
+  "nb.editorSettings.noCutButton": {
+    "message": "Hide cut button"
+  },
+  "nb.editorSettings.noCutButtonHelp": {
+    "message": "Hides the cut to clipboard button."
+  },
+  "nb.editorSettings.noSwapButton": {
+    "message": "Hide swap button"
+  },
+  "nb.editorSettings.noSwapButtonHelp": {
+    "message": "Hides the fill and outline swap button."
+  },
+  "nb.editorSettings.notchSize": {
+    "message": "Notch height (0-150%):"
+  },
+  "nb.editorSettings.notchSizeHelp": {
+    "message": "Controls how tall the notches and bumps that let blocks snap together are."
+  },
+  "nb.editorSettings.nudgeMultiplier": {
+    "message": "Nudge multiplier:"
+  },
+  "nb.editorSettings.nudgeMultiplierHelp": {
+    "message": "How far selected objects move when pressing Shift+Arrow keys in the paint editor."
+  },
+  "nb.editorSettings.openAccentManager": {
+    "message": "Open Accent Manager"
+  },
+  "nb.editorSettings.paddingSize": {
+    "message": "Padding size (50-200%):"
+  },
+  "nb.editorSettings.paddingSizeHelp": {
+    "message": "Controls the overall size and spacing of blocks."
+  },
+  "nb.editorSettings.paintSection": {
+    "message": "Paint"
+  },
+  "nb.editorSettings.personal": {
+    "message": "Personal"
+  },
+  "nb.editorSettings.presets": {
+    "message": "Presets"
+  },
+  "nb.editorSettings.resetBlockColors": {
+    "message": "Reset to defaults"
+  },
+  "nb.editorSettings.resetCategoriesVisibility": {
+    "message": "Reset to defaults"
+  },
+  "nb.editorSettings.resetTabsVisibility": {
+    "message": "Reset to defaults"
+  },
+  "nb.editorSettings.securitySection": {
+    "message": "Security"
+  },
+  "nb.editorSettings.soundSection": {
+    "message": "Sound"
+  },
+  "nb.editorSettings.stageLeft": {
+    "message": "Stage on left"
+  },
+  "nb.editorSettings.stageLeftHelp": {
+    "message": "Swaps the stage and the block palette."
+  },
+  "nb.editorSettings.theme": {
+    "message": "Theme"
+  },
+  "nb.editorSettings.title": {
+    "message": "Editor Settings",
+    "description": "Title of editor settings modal"
+  },
+  "nb.editorSettings.toolbox": {
+    "message": "Toolbox"
+  },
+  "nb.editorSettings.unrestrictUnsandboxed": {
+    "message": "Allow all extensions to load unsandboxed"
+  },
+  "nb.editorSettings.unrestrictUnsandboxedHelp": {
+    "message": "Disables extension security prompts and runs all extensions without the sandbox, including extension imports, URL parameter extensions, and project-loaded extensions. This is dangerous and should only be enabled if you fully trust all loaded extensions."
+  },
+  "nb.editorSettings.username": {
+    "message": "Username:"
+  },
+  "nb.editorSettings.username.mustChange": {
+    "message": "Sorry, the cloud variable server thinks your username may be unsafe. Please change it to something else or {resetIt}."
+  },
+  "nb.editorSettings.username.mustChange.resetIt": {
+    "message": "reset it (recommended)",
+    "description": "link to reset username"
+  },
+  "nb.editorSettings.usernameHelp": {
+    "message": "This value will be stored in your browser's storage. It may be logged when you interact with projects that contain cloud variables. It will also be used for Live Collaboration."
+  },
+  "nb.editorSettings.usernameHelp2": {
+    "message": "Values that do not correspond to a valid Scratch account will typically be rejected by the cloud variable server. We recommend leaving it as-is or changing it to your Scratch username."
+  },
+  "nb.editorSettings.vanillaPalette": {
+    "message": "Vanilla palette"
+  },
+  "nb.editorSettings.vanillaPaletteHelp": {
+    "message": "Hides NitroBolt-exclusive blocks (e.g. extended operators, switch, for-each-in-range, etc.) and hides the JSON and assets categories."
+  },
+  "nb.editorSettings.versionControl.defaultBranch": {
+    "message": "Default branch name:"
+  },
+  "nb.editorSettings.versionControl.defaultBranchHelp": {
+    "message": "The initial branch name used when creating a new Git repository. Existing repositories are not affected."
+  },
+  "nb.editorSettings.versionControlSection": {
+    "message": "Version Control"
+  },
+  "nb.editorSettings.viewCounter": {
+    "message": "Allow counting my views"
+  },
+  "nb.editorSettings.viewCounterHelp": {
+    "message": "When you start a project that is loaded from Scratch, this may be logged so that a view counter can be incremented over time. Views are anonymous and can not be tied back to any user."
+  },
+  "nb.editorSettings.viewCounterPrivacyLink": {
+    "message": "Privacy policy"
+  },
+  "nb.editorSettings.visibleTabs": {
+    "message": "Visible tabs"
+  },
+  "nb.editorSettings.visibleTabsHelp": {
+    "message": "Choose which tabs to show in the editor. Hidden tabs can still be accessed via keyboard shortcuts."
+  },
+  "nb.editorSettings.waveformColor": {
+    "message": "Waveform volume gradient"
+  },
+  "nb.editorSettings.waveformColorHelp": {
+    "message": "If checked, waveforms will display a volume gradient where green is quieter and red is louder."
+  },
+  "nb.editorSettings.waveformRenderType": {
+    "message": "Sharp waveforms"
+  },
+  "nb.editorSettings.waveformRenderTypeHelp": {
+    "message": "Choose between sharp edges on sound waveforms or soft edges like in Scratch. Sharp edges can offer more detail on large sounds."
+  },
+  "nb.extensionManager.title": {
+    "message": "Extension Manager",
+    "description": "Title of modal that appears when loading the Extension Manager"
+  },
+  "nb.git.desktopOnly": {
+    "message": "Git is only available in NitroBolt Desktop."
+  },
+  "nb.git.loadProjectFolder": {
+    "message": "Load Git project folder",
+    "description": "Loads a NitroBolt Git project folder"
+  },
+  "nb.git.missing": {
+    "message": "Git is not installed or could not be found."
+  },
+  "nb.git.title": {
+    "message": "Source Control"
+  },
+  "nb.keyInput.listening": {
+    "message": "Listening..."
+  },
+  "nb.keyInput.none": {
+    "message": "Not set"
+  },
+  "nb.leftChannel": {
+    "message": "Left Channel",
+    "description": "Label for left waveform"
+  },
+  "nb.menuBar.git": {
+    "message": "Git",
+    "description": "Button to open git menu"
+  },
+  "nb.openDebugger": {
+    "message": "Open debugger",
+    "description": "Button to open the debugger panel"
+  },
+  "nb.rightChannel": {
+    "message": "Right Channel",
+    "description": "Label for right waveform"
+  }
+}

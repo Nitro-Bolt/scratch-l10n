@@ -1,68 +1,97 @@
-# @turbowarp/scratch-l10n
+# scratch-l10n
 
-This is a modified version of scratch-l10n with translations that aren't used by TurboWarp removed.
+Central translation data and locale utilities for NitroBolt.
 
-## Scripts
+This package builds on the Scratch and TurboWarp translation catalogs. Those
+catalogs remain upstream data so NitroBolt can continue receiving translation
+updates. NitroBolt-specific strings and intentional replacements live in the
+separate `overrides` directory and are merged on top when the package builds.
 
-This repository also contains scripts that we use to maintain TurboWarp's translations. They assume you have a directory laid out with `scratch-l10n`, `scratch-gui`, `turbowarp-desktop`, and `packager` in the same parent folder.
+## Install
 
-Download all translations from Transifex:
-
-```bash
-npm run tw:pull
+```sh
+pnpm install --frozen-lockfile
 ```
 
-Upload scratch-gui to Transifex:
+The package builds its generated `locales` and `dist` files through its
+`prepare` lifecycle script when installed from GitHub. Pin production consumers
+to a commit SHA for reproducible installs.
 
-```bash
-npm run tw:push
+## Development
+
+```sh
+pnpm test
+pnpm build
 ```
 
-Publish minified scratch-l10n to npm:
+Generated files are written to `locales` and `dist`.
 
-```bash
-npm run tw:publish
+## Translation layers
+
+The package applies translations in this order:
+
+1. Scratch editor translations in `editor`
+2. Vendored TurboWarp translations in `turbowarp-translations.json`
+3. NitroBolt additions in `overrides/editor`
+
+NitroBolt entries take precedence when the same message ID exists in more than
+one layer. See `overrides/README.md` for the overlay layout.
+
+## Updating upstream strings
+
+Scratch translations are stored in `editor`. TurboWarp translations are stored
+in `turbowarp-translations.json`. Neither source requires access to an upstream
+Transifex account during normal development or builds.
+
+Update those files by merging changes from the corresponding upstream Git
+repositories. NitroBolt's Transifex synchronization never writes to Scratch or
+TurboWarp projects.
+
+After updating the sibling `scratch-gui` fork from TurboWarp, refresh the
+vendored TurboWarp catalog with:
+
+```sh
+pnpm sync:upstream
 ```
 
-Transifex API token can either be stored in the `TX_TOKEN` environment variable or the `.tx_token` file (ignored by git).
+This is a local file copy and does not contact Transifex.
 
-<!--
-Translation of all Scratch projects is managed on the Transifex service: https://www.transifex.com/llk/public
+## NitroBolt Transifex
 
-This repository collects translations submitted to the Scratch projects on Transifex. **Please do not submit PRs. If
-you would like to contribute translations, please sign up to translate on Transifex.**
+The `blocks`, `extensions`, `interface`, and `paint-editor` resources belong to
+the `nitrobolt` project in the `nitrobolt` Transifex organization. Configure an
+API token before synchronizing:
 
-## Using scratch-l10n in development
+```sh
+export TX_TOKEN="your-api-token"
+pnpm transifex:pull
+pnpm transifex:push
+```
 
-### Basic Use
+`pnpm transifex:push` first runs each sibling repository's existing source
+extractor. It writes only NitroBolt additions to `sources`: `nb.*` messages from
+GUI and VM, plus Paint and Blocks messages that differ from the Scratch catalog.
+Those source files are the only content uploaded to NitroBolt's Transifex.
+
+The token can instead be stored in the ignored `.tx_token` file. Pulled
+translations are written only to `overrides/editor`, leaving vendored Scratch
+and TurboWarp strings unchanged.
+
+## Package API
 
 ```js
-import locales, {localeData, isRtl} from 'scratch-l10n';
-import editorMessages from 'scratch-l10n/locales/editor-messages';
+import locales, {localeData, localeMap, isRtl} from 'scratch-l10n';
+import editorMessages from 'scratch-l10n/locales/editor-msgs';
 ```
 
-* `locales`: currently supported locales for the Scratch project
-* `isRtl`: function that returns true if the locale is one that is written right-to-left
-* `localeData`: locale data for the supported locales, in the format accepted by `addLocaleData` required by `react-intl`
-* `editorMessages`: the actual message strings for all supported locales for a particular resource. `editorMessages`
-  collects all the strings for the interface, extensions and paint-editor.
+- `locales` lists supported editor locales.
+- `localeData` contains React Intl locale data.
+- `localeMap` maps application locale codes to Transifex locale codes.
+- `isRtl` reports whether a locale uses right-to-left text.
+- The `locales` modules contain the built message catalogs.
 
-### Useful Scripts
+## Attribution
 
-scratch-l10n provides:
-
-* `build-i18n-src`: script that uses babel and plugins to extract all `FormattedMessage` strings for translation.
-  Combines the message from all the source files into one `en.json`
-* `tx-push-src`: script to push the `en.json` file to Transifex. Requires that the environment variable `TX_TOKEN` is
-  set with a value that has developer access to the Scratch projects on Transifex (i.e. Scratch Team only)
-
-### Versioning
-
-`scratch-l10n` uses semantic versioning - breaking changes will increment the major version number, and new features
-(e.g. a new language) will increment the minor version number. Pulling new translations from Transifex is automated
-and will increase the patch version.
-
-### Deprecations
-
-We are moving away from using the `tx` cli, so the `.tx/config` file will eventually be deprecated.
--->
+This repository is derived from Scratch's `scratch-l10n` and TurboWarp's
+modified distribution. Their licenses and trademarks remain their own. See
+`LICENSE`, `TRADEMARK`, and the Git history for attribution.
