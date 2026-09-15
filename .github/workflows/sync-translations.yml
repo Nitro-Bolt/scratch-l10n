@@ -108,6 +108,6 @@ jobs:
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add sources overrides turbowarp-translations.json
-          git commit -m "fix: update translations"
+          git commit -m "chore: update translations"
           git pull --rebase origin develop
           git push origin develop
