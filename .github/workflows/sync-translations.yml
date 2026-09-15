@@ -85,13 +85,13 @@ jobs:
       - name: Push source strings
         working-directory: scratch-l10n
         env:
-          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+          TX_TOKEN: ${{ secrets.TRANSIFEX_TOKEN }}
         run: pnpm transifex:push
 
       - name: Pull reviewed translations
         working-directory: scratch-l10n
         env:
-          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+          TX_TOKEN: ${{ secrets.TRANSIFEX_TOKEN }}
         run: pnpm transifex:pull
 
       - name: Validate translations
