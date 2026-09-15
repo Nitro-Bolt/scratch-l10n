@@ -21,7 +21,7 @@ jobs:
         with:
           path: scratch-l10n
           ref: develop
-          token: ${{ secrets.CASCADE_PAT }}
+          token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-gui
         uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           repository: Nitro-Bolt/scratch-gui
           path: scratch-gui
           ref: develop
-          token: ${{ secrets.CASCADE_PAT }}
+          token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-vm
         uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
           repository: Nitro-Bolt/scratch-vm
           path: scratch-vm
           ref: develop
-          token: ${{ secrets.CASCADE_PAT }}
+          token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-paint
         uses: actions/checkout@v4
@@ -45,7 +45,7 @@ jobs:
           repository: Nitro-Bolt/scratch-paint
           path: scratch-paint
           ref: develop
-          token: ${{ secrets.CASCADE_PAT }}
+          token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-blocks
         uses: actions/checkout@v4
@@ -53,7 +53,7 @@ jobs:
           repository: Nitro-Bolt/scratch-blocks
           path: scratch-blocks
           ref: develop
-          token: ${{ secrets.CASCADE_PAT }}
+          token: ${{ secrets.AUTOMATION }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
