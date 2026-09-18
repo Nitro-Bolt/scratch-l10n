@@ -1,13 +1,13 @@
 {
-    "nb.paint.recentColors": "Recent Colors",
-    "paint.colorPicker.customGradient": "Custom Gradient",
-    "paint.modeTools.center": "Center",
-    "paint.modeTools.cut": "Cut",
-    "paint.modeTools.rectRadius": "Rectangle Curve",
-    "paint.paintEditor.filter": "Filter",
-    "paint.paintEditor.mask": "Mask",
-    "paint.paintEditor.masktools": "Booleans",
-    "paint.paintEditor.merge": "Merge",
-    "paint.paintEditor.subtract": "Subtract",
-    "paint.paintEditor.swap": "Swap"
+    "nb.paint.recentColors": "Naujos Spalvos",
+    "paint.colorPicker.customGradient": "Gradientas",
+    "paint.modeTools.center": "Perkelk į vidurį",
+    "paint.modeTools.cut": "Iškirpti",
+    "paint.modeTools.rectRadius": "Stačiakampio Vingis",
+    "paint.paintEditor.filter": "Filteris",
+    "paint.paintEditor.mask": "Maskuoti",
+    "paint.paintEditor.masktools": "Loginiai",
+    "paint.paintEditor.merge": "Sujungti",
+    "paint.paintEditor.subtract": "Ištrinti perkirtimus",
+    "paint.paintEditor.swap": "Keisti"
 }

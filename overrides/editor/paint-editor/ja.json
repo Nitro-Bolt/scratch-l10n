@@ -1,13 +1,13 @@
 {
-    "nb.paint.recentColors": "Recent Colors",
-    "paint.colorPicker.customGradient": "Custom Gradient",
-    "paint.modeTools.center": "Center",
-    "paint.modeTools.cut": "Cut",
-    "paint.modeTools.rectRadius": "Rectangle Curve",
-    "paint.paintEditor.filter": "Filter",
-    "paint.paintEditor.mask": "Mask",
-    "paint.paintEditor.masktools": "Booleans",
-    "paint.paintEditor.merge": "Merge",
-    "paint.paintEditor.subtract": "Subtract",
-    "paint.paintEditor.swap": "Swap"
+    "nb.paint.recentColors": "最近使用した色",
+    "paint.colorPicker.customGradient": "カスタムなグラデーション",
+    "paint.modeTools.center": "中央",
+    "paint.modeTools.cut": "切り取り",
+    "paint.modeTools.rectRadius": "角丸",
+    "paint.paintEditor.filter": "フィルター",
+    "paint.paintEditor.mask": "マスク",
+    "paint.paintEditor.masktools": "真偽値",
+    "paint.paintEditor.merge": "マージ",
+    "paint.paintEditor.subtract": "差分",
+    "paint.paintEditor.swap": "スワップ"
 }
