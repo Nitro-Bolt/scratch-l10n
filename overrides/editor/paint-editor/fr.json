@@ -1,13 +1,13 @@
 {
-    "nb.paint.recentColors": "Recent Colors",
-    "paint.colorPicker.customGradient": "Custom Gradient",
-    "paint.modeTools.center": "Center",
-    "paint.modeTools.cut": "Cut",
-    "paint.modeTools.rectRadius": "Rectangle Curve",
-    "paint.paintEditor.filter": "Filter",
-    "paint.paintEditor.mask": "Mask",
-    "paint.paintEditor.masktools": "Booleans",
-    "paint.paintEditor.merge": "Merge",
-    "paint.paintEditor.subtract": "Subtract",
-    "paint.paintEditor.swap": "Swap"
+    "nb.paint.recentColors": "Couleurs Récentes",
+    "paint.colorPicker.customGradient": "Dégradé Personnalisé",
+    "paint.modeTools.center": "Centrer",
+    "paint.modeTools.cut": "Couper",
+    "paint.modeTools.rectRadius": "Rectangle Courbé",
+    "paint.paintEditor.filter": "Filtrer",
+    "paint.paintEditor.mask": "Masquer",
+    "paint.paintEditor.masktools": "Booléens",
+    "paint.paintEditor.merge": "Fusionner",
+    "paint.paintEditor.subtract": "Soustraire",
+    "paint.paintEditor.swap": "Échanger"
 }
