@@ -426,5 +426,9 @@
   "nb.rightChannel": {
     "message": "Right Channel",
     "description": "Label for right waveform"
+  },
+  "tw.guiDefaultTitle": {
+    "message": "Beyond Limitations",
+    "description": "Title of homepage"
   }
 }

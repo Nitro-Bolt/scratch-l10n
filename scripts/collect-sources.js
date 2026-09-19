@@ -7,6 +7,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..', '..');
 const l10n = path.resolve(__dirname, '..');
 const pnpmScript = process.env.npm_execpath;
+const intentionalOverrides = require('./intentional-overrides.json');
 
 if (!pnpmScript) {
     throw new Error('Run this collector through pnpm so it can invoke sibling repository scripts.');
@@ -23,8 +24,7 @@ const resources = [
         repo: 'scratch-vm',
         command: 'i18n:src',
         input: 'translations/core/en.json',
-        component: 'extensions',
-        prefix: 'nb.'
+        component: 'extensions'
     },
     {
         repo: 'scratch-paint',
@@ -73,14 +73,16 @@ for (const resource of resources) {
 
     const extracted = readJson(path.join(repoPath, resource.input));
     const upstream = readJson(path.join(l10n, 'editor', resource.component, 'en.json'));
+    const replacements = intentionalOverrides[resource.component] || {};
     const additions = {};
 
     for (const id of Object.keys(extracted).sort()) {
-        if (id.startsWith('tw.')) continue;
-        if (resource.prefix && !id.startsWith(resource.prefix)) continue;
-        if (!resource.prefix && upstream[id] === messageText(extracted[id])) continue;
+        const text = messageText(extracted[id]);
+        if (id.startsWith('tw.') && !Object.prototype.hasOwnProperty.call(replacements, id)) continue;
+        if (!id.startsWith('nb.') && upstream[id] === text) continue;
         additions[id] = extracted[id];
     }
+    Object.assign(additions, replacements);
 
     const output = path.join(l10n, 'sources', `${resource.component}.json`);
     fs.mkdirSync(path.dirname(output), {recursive: true});

@@ -22,3 +22,12 @@ Transifex project.
 Keep upstream translations in `editor`. Do not copy upstream catalogs into
 this directory. An override should contain only NitroBolt-specific strings or
 intentional NitroBolt replacements.
+
+Strings with a `tw.` ID are treated as TurboWarp-owned by default. If
+NitroBolt intentionally changes one, add its ID to
+`scripts/intentional-overrides.json`. New or changed Scratch strings are
+detected by comparing their English text with the vendored Scratch catalog.
+
+Locale filenames always use Scratch locale codes. The Transifex mapping in
+`src/supported-locales.js` handles differing remote codes, such as Scratch's
+`fil` and Transifex's `fil_PH` for Filipino (Philippines).

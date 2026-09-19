@@ -123,6 +123,8 @@ const customLocales = {
 const localeMap = {
     'aa-dj': 'aa_DJ',
     'es-419': 'es_419',
+    // Scratch uses "fil" locally; NitroBolt's Transifex project uses Filipino (Philippines).
+    'fil': 'fil_PH',
     // ja-Hira: no map - it's 'ja-Hira' on transifex
     'pt-br': 'pt_BR',
     'zh-cn': 'zh_CN',

@@ -18,6 +18,7 @@
     "lint:json": "jshint -e .json www editor/blocks editor/extensions editor/interface editor/paint-editor sources",
     "prepare": "pnpm run build",
     "sources:collect": "node scripts/collect-sources.js",
+    "locales:audit": "babel-node scripts/audit-locales.js",
     "sync:upstream": "node scripts/sync-upstream.js",
     "transifex:pull": "pnpm run transifex:pull:blocks && pnpm run transifex:pull:extensions && pnpm run transifex:pull:paint && pnpm run transifex:pull:interface",
     "transifex:pull:blocks": "babel-node scripts/tx-pull-editor nitrobolt blocks ./overrides/editor/blocks/",

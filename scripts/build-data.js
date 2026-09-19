@@ -44,6 +44,7 @@ import {sync as mkdirpSync} from 'mkdirp';
 import defaultsDeep from 'lodash.defaultsdeep';
 import locales from '../src/supported-locales.js';
 import allUsedIds from './tw-all-used-ids.json';
+import intentionalOverrides from './intentional-overrides.json';
 
 const MSGS_DIR = './locales/';
 const TURBOWARP_TRANSLATIONS = './turbowarp-translations.json';
@@ -82,6 +83,28 @@ const readNitroBoltSources = (component, lang) => {
     return messages;
 };
 
+const readNitroBoltOverrides = (component, lang) => {
+    const translations = readLayer(OVERRIDES_DIR, component, lang);
+    if (lang === 'en') return translations;
+
+    const source = readLayer(SOURCES_DIR, '', component);
+    const upstreamEnglish = readLayer('./editor/', component, 'en');
+    const replacements = intentionalOverrides[component] || {};
+    for (const id of Object.keys(translations)) {
+        const sourceEntry = source[id];
+        const sourceText = typeof sourceEntry === 'string' ? sourceEntry : sourceEntry && sourceEntry.message;
+        if (translations[id] !== sourceText) continue;
+
+        const replacesTurboWarp = Object.prototype.hasOwnProperty.call(replacements, id);
+        const replacesScratch = Object.prototype.hasOwnProperty.call(upstreamEnglish, id) &&
+            upstreamEnglish[id] !== sourceText;
+        if (!replacesTurboWarp && !replacesScratch) {
+            delete translations[id];
+        }
+    }
+    return translations;
+};
+
 const combineJson = (component) => {
     return Object.keys(locales).reduce((collection, lang) => {
         try {
@@ -98,7 +121,7 @@ const combineJson = (component) => {
                 ...langData,
                 ...readTurboWarpTranslations(component, lang),
                 ...readNitroBoltSources(component, lang),
-                ...readLayer(OVERRIDES_DIR, component, lang)
+                ...readNitroBoltOverrides(component, lang)
             };
         } catch (e) {
             missingLocales.push(component + ':' + lang + '\n');

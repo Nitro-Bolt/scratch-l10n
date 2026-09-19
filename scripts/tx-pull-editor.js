@@ -32,6 +32,7 @@ import {txAvailableLanguages, txPull} from '../lib/transifex.js';
 import {validateTranslations} from '../lib/validate.js';
 import locales, {localeMap} from '../src/supported-locales.js';
 import {batchMap} from '../lib/batch.js';
+import intentionalOverrides from './intentional-overrides.json';
 
 // Globals
 const PROJECT = args[0];
@@ -40,8 +41,12 @@ const OUTPUT_DIR = path.resolve(args[2]);
 const MODE = 'reviewed';
 const CONCURRENCY_LIMIT = 36;
 
-const getLocaleData = async function (locale) {
-    let txLocale = localeMap[locale] || locale;
+const getTransifexLocale = (locale, availableLanguages) => {
+    const candidates = [localeMap[locale], locale].filter(Boolean);
+    return candidates.find(candidate => availableLanguages.includes(candidate));
+};
+
+const getLocaleData = async function ({locale, txLocale}) {
     const data = await txPull(PROJECT, RESOURCE, txLocale, MODE);
     return {
         locale: locale,
@@ -53,12 +58,18 @@ const pullTranslations = async function () {
     try {
         fs.mkdirSync(OUTPUT_DIR, {recursive: true});
         const availableLanguages = await txAvailableLanguages(PROJECT);
-        const enabledLocales = Object.keys(locales).filter(locale => {
-            if (locale === 'en') return true;
-            return availableLanguages.includes(localeMap[locale] || locale);
-        });
+        const enabledLocales = Object.keys(locales).map(locale => ({
+            locale,
+            txLocale: locale === 'en' ? 'en' : getTransifexLocale(locale, availableLanguages)
+        }))
+            .filter(locale => locale.txLocale);
         const values = await batchMap(enabledLocales, CONCURRENCY_LIMIT, getLocaleData);
         const source = values.find(elt => elt.locale === 'en').translations;
+        const upstreamEnglish = JSON.parse(fs.readFileSync(
+            path.resolve(__dirname, '..', 'editor', RESOURCE, 'en.json'),
+            'utf8'
+        ));
+        const replacements = intentionalOverrides[RESOURCE] || {};
         values.forEach(function (translation) {
             validateTranslations({locale: translation.locale, translations: translation.translations}, source);
             if (translation.locale === 'en') return;
@@ -70,6 +81,14 @@ const pullTranslations = async function () {
                     txs[key] = tx.message;
                 } else {
                     txs[key] = tx;
+                }
+                const sourceEntry = source[key];
+                const sourceText = sourceEntry && sourceEntry.message ? sourceEntry.message : sourceEntry;
+                const replacesTurboWarp = Object.prototype.hasOwnProperty.call(replacements, key);
+                const replacesScratch = Object.prototype.hasOwnProperty.call(upstreamEnglish, key) &&
+                    upstreamEnglish[key] !== sourceText;
+                if (txs[key] === sourceText && !replacesTurboWarp && !replacesScratch) {
+                    delete txs[key];
                 }
             }
             const file = JSON.stringify(txs, null, 4);

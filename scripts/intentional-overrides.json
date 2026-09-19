@@ -1,0 +1,11 @@
+{
+  "blocks": {},
+  "extensions": {},
+  "interface": {
+    "tw.guiDefaultTitle": {
+      "message": "Beyond Limitations",
+      "description": "Title of homepage"
+    }
+  },
+  "paint-editor": {}
+}

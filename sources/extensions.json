@@ -56,5 +56,105 @@
   },
   "nb.debugger.withColor": {
     "message": "with color [VALUE]"
+  },
+  "pen.allPapers": {
+    "message": "all papers",
+    "description": "report the names of all pen drawing layers"
+  },
+  "pen.clearPaper": {
+    "message": "erase paper named [PAPER]",
+    "description": "erase all pen trails and stamps from a named pen drawing layer"
+  },
+  "pen.combinePapers": {
+    "message": "[MODE] paper [SOURCE] into [DESTINATION]",
+    "description": "copy or merge the pixels from one pen drawing layer into another"
+  },
+  "pen.createPaper": {
+    "message": "create paper named [PAPER]",
+    "description": "create a named pen drawing layer"
+  },
+  "pen.currentPaper": {
+    "message": "current paper",
+    "description": "report the name of the selected pen drawing layer"
+  },
+  "pen.paperExists": {
+    "message": "paper [PAPER] exists?",
+    "description": "check whether a named pen drawing layer exists"
+  },
+  "pen.paperIndex": {
+    "message": "index of paper [PAPER]",
+    "description": "report the stacking index of a named pen drawing layer"
+  },
+  "pen.paperIsVisible": {
+    "message": "is paper [PAPER] visible?",
+    "description": "check whether a named pen drawing layer is visible"
+  },
+  "pen.paperVisibilityMenu.hide": {
+    "message": "hide",
+    "description": "hide option in the pen paper visibility menu"
+  },
+  "pen.paperVisibilityMenu.show": {
+    "message": "show",
+    "description": "show option in the pen paper visibility menu"
+  },
+  "pen.printColorTargetMenu.fill": {
+    "message": "fill",
+    "description": "fill option in the pen print color menu"
+  },
+  "pen.printColorTargetMenu.stroke": {
+    "message": "stroke",
+    "description": "stroke option in the pen print color menu"
+  },
+  "pen.printText": {
+    "message": "print [TEXT] at x: [X] y: [Y]",
+    "description": "draw text on the selected pen paper"
+  },
+  "pen.removePaper": {
+    "message": "remove paper named [PAPER]",
+    "description": "remove a named pen drawing layer"
+  },
+  "pen.setPaperIndex": {
+    "message": "set paper [PAPER] layer to [INDEX]",
+    "description": "set the stacking index of a named pen drawing layer"
+  },
+  "pen.setPaperVisibility": {
+    "message": "[VISIBILITY] paper [PAPER]",
+    "description": "show or hide a named pen drawing layer"
+  },
+  "pen.setPrintAlignment": {
+    "message": "set print text alignment to [ALIGNMENT]",
+    "description": "set the horizontal alignment used by the pen print block"
+  },
+  "pen.setPrintColor": {
+    "message": "set print [TARGET] color to [COLOR]",
+    "description": "set the fill or outline color used by the pen print block"
+  },
+  "pen.setPrintFont": {
+    "message": "set print font to [FONT]",
+    "description": "set the font used by the pen print block"
+  },
+  "pen.setPrintFontSize": {
+    "message": "set print font size to [SIZE]",
+    "description": "set the font size used by the pen print block"
+  },
+  "pen.setPrintFontWeight": {
+    "message": "set print font weight to [WEIGHT]",
+    "description": "set the font weight used by the pen print block"
+  },
+  "pen.setPrintItalic": {
+    "message": "turn print font italics [STATE]",
+    "description": "turn italics on or off for the pen print block"
+  },
+  "pen.setPrintStrokeWidth": {
+    "message": "set print stroke width to [WIDTH]",
+    "description": "set the outline width used by the pen print block"
+  },
+  "pen.setPrintWordWrap": {
+    "message": "turn print word wrapping [STATE]",
+    "description": "turn word wrapping on or off for the pen print block"
+  },
+  "pen.switchPaper": {
+    "message": "switch paper to [PAPER]",
+    "description": "select the pen drawing layer used by pen blocks"
   }
 }
