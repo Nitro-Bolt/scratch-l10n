@@ -52,7 +52,7 @@ jobs:
         with:
           repository: Nitro-Bolt/scratch-blocks
           path: scratch-blocks
-          ref: develop
+          ref: develop-builds
           token: ${{ secrets.AUTOMATION }}
 
       - name: Install pnpm
