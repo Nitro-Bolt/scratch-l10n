@@ -83,6 +83,8 @@ const readNitroBoltSources = (component, lang) => {
     return messages;
 };
 
+const blockPlaceholders = message => (String(message).match(/%\d+/g) || []).sort().join(',');
+
 const readNitroBoltOverrides = (component, lang) => {
     const translations = readLayer(OVERRIDES_DIR, component, lang);
     if (lang === 'en') return translations;
@@ -93,6 +95,10 @@ const readNitroBoltOverrides = (component, lang) => {
     for (const id of Object.keys(translations)) {
         const sourceEntry = source[id];
         const sourceText = typeof sourceEntry === 'string' ? sourceEntry : sourceEntry && sourceEntry.message;
+        if (component === 'blocks' && blockPlaceholders(translations[id]) !== blockPlaceholders(sourceText)) {
+            delete translations[id];
+            continue;
+        }
         if (translations[id] !== sourceText) continue;
 
         const replacesTurboWarp = Object.prototype.hasOwnProperty.call(replacements, id);
