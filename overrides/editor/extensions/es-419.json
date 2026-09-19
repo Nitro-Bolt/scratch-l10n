@@ -1,9 +1,6 @@
 {
-    "nb.debugger.breakpoint": "breakpoint",
     "nb.debugger.clearLogs": "borrar registros",
     "nb.debugger.cloneCount": "contador de clones",
-    "nb.debugger.log": "[TYPE] [MESSAGE] [COLOR]",
-    "nb.debugger.logType.error": "error",
     "nb.debugger.logType.log": "loguear",
     "nb.debugger.logType.warn": "advertir",
     "nb.debugger.name": "Depurador",

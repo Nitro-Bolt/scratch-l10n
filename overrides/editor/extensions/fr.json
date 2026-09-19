@@ -2,7 +2,6 @@
     "nb.debugger.breakpoint": "point d'arrêt",
     "nb.debugger.clearLogs": "effacer les journaux",
     "nb.debugger.cloneCount": "nombre de clones",
-    "nb.debugger.log": "[TYPE] [MESSAGE] [COLOR]",
     "nb.debugger.logType.error": "erreur",
     "nb.debugger.logType.log": "enregistrer",
     "nb.debugger.logType.warn": "avertissement",

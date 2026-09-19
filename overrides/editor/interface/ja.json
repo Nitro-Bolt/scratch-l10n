@@ -128,7 +128,7 @@
     "nb.keyInput.listening": "聞いています...",
     "nb.keyInput.none": "未設定",
     "nb.leftChannel": "左チャンネル",
-    "nb.menuBar.git": "Git",
     "nb.openDebugger": "デバッガーを開く",
-    "nb.rightChannel": "右チャンネル"
+    "nb.rightChannel": "右チャンネル",
+    "tw.guiDefaultTitle": "Beyond Limitations"
 }

@@ -1,0 +1,11 @@
+{
+    "nb.debugger.clearLogs": "linisin ang logs",
+    "nb.debugger.cloneCount": "bilang ng clones",
+    "nb.debugger.timerOperation.clear": "linisin",
+    "nb.debugger.timerOperation.delete": "burahin",
+    "nb.debugger.timerOperation.end": "huli",
+    "nb.debugger.timerOperation.start": "umpisa",
+    "nb.debugger.timerValue": "[STAT] ng timer na [TIMER_NAME]",
+    "nb.debugger.usedMemory": "nagamit na memory",
+    "nb.debugger.withColor": "kasama ang kulay [VALUE]"
+}

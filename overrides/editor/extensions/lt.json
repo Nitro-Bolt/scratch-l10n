@@ -2,7 +2,6 @@
     "nb.debugger.breakpoint": "stabdos taškas",
     "nb.debugger.clearLogs": "valyk registravimus",
     "nb.debugger.cloneCount": "klonų skaičius",
-    "nb.debugger.log": "[TYPE] [MESSAGE] [COLOR]",
     "nb.debugger.logType.error": "klaida",
     "nb.debugger.logType.log": "registruoti",
     "nb.debugger.logType.warn": "įspėjimas",
