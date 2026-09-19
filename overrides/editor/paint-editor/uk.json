@@ -1,1 +1,13 @@
-{}
+{
+    "nb.paint.recentColors": "Останні Колори ",
+    "paint.colorPicker.customGradient": "Власний Градієнт",
+    "paint.modeTools.center": "Центер",
+    "paint.modeTools.cut": "Розріз",
+    "paint.modeTools.rectRadius": "Прямокутна Пряма",
+    "paint.paintEditor.filter": "Фільтр",
+    "paint.paintEditor.mask": "Маска",
+    "paint.paintEditor.masktools": "Булеві",
+    "paint.paintEditor.merge": "Поєднати",
+    "paint.paintEditor.subtract": "Відняти",
+    "paint.paintEditor.swap": "Замінити"
+}

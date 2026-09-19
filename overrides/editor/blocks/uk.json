@@ -1,1 +1,17 @@
-{}
+{
+    "ASSETS_ALL": "всі ассети в %1",
+    "ASSETS_FILE_AS_TYPE": "%1 як %2",
+    "ASSETS_METADATA": "%1 в %2",
+    "ASSETS_SET": "задати %1 %2 на %3",
+    "ASSETS_WRITE": "записати %1 як %2 до %3",
+    "CATEGORY_ASSETS": "Ассети",
+    "CONTROL_INLINE_IF_ELSE": "якщо %1, тоді %2, інакше %3",
+    "DATA_ADDTOTABLE": "додати новий %1 до %2",
+    "DATA_COLUMN": "колона",
+    "DATA_DELETEALLOFTABLE": "видалити все з %1",
+    "DATA_DELETECELLINTABLE": "видаліти клітину в колоні %1, ряді %2 %3",
+    "DATA_DELETEDIMENSIONINTABLE": "видалити %1, %2 в %3",
+    "DATA_HIDETABLE": "сховати таблицю %1",
+    "DATA_INSERTDIMENSIONTOTABLE": "вставити новий %1 в %2 %3",
+    "DATA_ITEMINCELLOFTABLE": "предмет в колоні %1 рядку %2 %3"
+}
