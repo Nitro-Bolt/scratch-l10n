@@ -166,6 +166,12 @@
   "nb.editorSettings.encodingBitRateHelp": {
     "message": "Defines the bit rate for sounds encoded in NitroBolt."
   },
+  "nb.editorSettings.extendableArrowsLeft": {
+    "message": "Extendable arrows on left"
+  },
+  "nb.editorSettings.extendableArrowsLeftHelp": {
+    "message": "Moves the arrows of expandable blocks from the right side to the left side."
+  },
   "nb.editorSettings.fieldHeight": {
     "message": "Field height (75-150%):"
   },
@@ -350,7 +356,7 @@
     "message": "Vanilla palette"
   },
   "nb.editorSettings.vanillaPaletteHelp": {
-    "message": "Hides NitroBolt-exclusive blocks (e.g. extended operators, switch, for-each-in-range, etc.) and hides the JSON and assets categories."
+    "message": "Hides NitroBolt-exclusive blocks and hides the JSON and assets categories."
   },
   "nb.editorSettings.versionControl.defaultBranch": {
     "message": "Default branch name:"
@@ -426,6 +432,14 @@
   "nb.rightChannel": {
     "message": "Right Channel",
     "description": "Label for right waveform"
+  },
+  "nb.settingsModal.penTiling": {
+    "message": "Pen Tiling",
+    "description": "Pen tiling setting"
+  },
+  "nb.settingsModal.penTilingHelp": {
+    "message": "Allows the Pen extension to draw, stamp, and print beyond the stage using tiled textures. May increase memory usage and rendering cost.",
+    "description": "Pen tiling setting help"
   },
   "tw.guiDefaultTitle": {
     "message": "Beyond Limitations",

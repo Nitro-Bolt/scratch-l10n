@@ -7,6 +7,22 @@
     "message": "Custom Gradient",
     "description": "Label for the custom gradient editor button"
   },
+  "paint.modeTools.alignCenter": {
+    "message": "Center",
+    "description": "Label for the text align center button"
+  },
+  "paint.modeTools.alignJustify": {
+    "message": "Justify",
+    "description": "Label for the text justify button"
+  },
+  "paint.modeTools.alignLeft": {
+    "message": "Left",
+    "description": "Label for the text align left button"
+  },
+  "paint.modeTools.alignRight": {
+    "message": "Right",
+    "description": "Label for the text align right button"
+  },
   "paint.modeTools.center": {
     "message": "Center",
     "description": "Label for the button that moves the selected objects to the center of the canvas"

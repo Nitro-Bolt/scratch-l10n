@@ -107,7 +107,6 @@
     "nb.editorSettings.usernameHelp": "この値はあなたのブラウザに保存されます。もしかしたらクラウド変数を使うプロジェクトを使った時にログされるかもしれません。ライブコラボレーションにも使われます。",
     "nb.editorSettings.usernameHelp2": "Scratchのアカウントに準拠しない値はクラウド変数サーバーに拒絶されます。私たちはそのままにするか、それかScratchのユーザーネームに変えることを推奨します。",
     "nb.editorSettings.vanillaPalette": "バニラパレット",
-    "nb.editorSettings.vanillaPaletteHelp": "NitroBolt特有のブロック(例えば、拡張可能演算子、switch, for-each-in-range、など)とJSONカテゴリーとアセットカテゴリーを隠します。",
     "nb.editorSettings.versionControl.defaultBranch": "デフォルトのブランチ名:",
     "nb.editorSettings.versionControl.defaultBranchHelp": "Gitリポジトリ—作成時に使われるブランチ名。すでに作成されたリポジトリーには影響ありません。",
     "nb.editorSettings.versionControlSection": "バージョンコントロール",

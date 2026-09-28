@@ -1,7 +1,13 @@
 {
     "ASSETS_ALL": "todos los assets en %1",
     "ASSETS_FILE_AS_TYPE": "%1 como %2",
+    "ASSETS_FILE_AS_TYPE_DATA_URI": "URI de datos",
+    "ASSETS_FILE_AS_TYPE_TEXT": "texto",
     "ASSETS_METADATA": "%1 de %2",
+    "ASSETS_METADATA_CONTENT_TYPE": "tipo de contenido",
+    "ASSETS_METADATA_EXTENSION": "extensión",
+    "ASSETS_METADATA_LAST_MODIFIED": "última modificación",
+    "ASSETS_METADATA_NAME": "nombre",
     "ASSETS_SET": "establecer %1 de %2 a %3",
     "ASSETS_WRITE": "escribir %1 como %2 a %3",
     "COLLAPSE_ALL": "Contraer Todo",
