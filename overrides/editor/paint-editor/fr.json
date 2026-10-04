@@ -1,9 +1,12 @@
 {
     "nb.paint.recentColors": "Couleurs Récentes",
     "paint.colorPicker.customGradient": "Dégradé Personnalisé",
+    "paint.modeTools.alignCenter": "Centrer",
+    "paint.modeTools.alignJustify": "Répartir",
+    "paint.modeTools.alignLeft": "Gauche",
+    "paint.modeTools.alignRight": "Droite",
     "paint.modeTools.center": "Centrer",
     "paint.modeTools.cut": "Couper",
-    "paint.modeTools.rectRadius": "Rectangle Courbé",
     "paint.paintEditor.filter": "Filtrer",
     "paint.paintEditor.mask": "Masquer",
     "paint.paintEditor.masktools": "Booléens",

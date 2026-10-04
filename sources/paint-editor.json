@@ -31,9 +31,13 @@
     "message": "Cut",
     "description": "Label for the cut button"
   },
-  "paint.modeTools.rectRadius": {
-    "message": "Rectangle Curve",
-    "description": "Label for the rectangle curve input"
+  "paint.modeTools.polygonRadius": {
+    "message": "Corner radius",
+    "description": "Label for the polygon corner radius input"
+  },
+  "paint.modeTools.polygonSides": {
+    "message": "Sides",
+    "description": "Label for the polygon side count input"
   },
   "paint.paintEditor.filter": {
     "message": "Filter",
@@ -58,5 +62,9 @@
   "paint.paintEditor.swap": {
     "message": "Swap",
     "description": "Label for button that swaps the fill and stroke colors"
+  },
+  "paint.polygonMode.polygon": {
+    "message": "Polygon",
+    "description": "Label for the polygon tool"
   }
 }
