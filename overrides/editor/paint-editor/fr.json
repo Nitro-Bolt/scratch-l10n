@@ -7,10 +7,13 @@
     "paint.modeTools.alignRight": "Droite",
     "paint.modeTools.center": "Centrer",
     "paint.modeTools.cut": "Couper",
+    "paint.modeTools.polygonRadius": "Rayon des coins",
+    "paint.modeTools.polygonSides": "Côtés",
     "paint.paintEditor.filter": "Filtrer",
     "paint.paintEditor.mask": "Masquer",
     "paint.paintEditor.masktools": "Booléens",
     "paint.paintEditor.merge": "Fusionner",
     "paint.paintEditor.subtract": "Soustraire",
-    "paint.paintEditor.swap": "Échanger"
+    "paint.paintEditor.swap": "Échanger",
+    "paint.polygonMode.polygon": "Polygone"
 }
