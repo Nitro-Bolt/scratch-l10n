@@ -7,6 +7,10 @@
     "message": "Custom Gradient",
     "description": "Label for the custom gradient editor button"
   },
+  "paint.fillMode.effects": {
+    "message": "Effects",
+    "description": "Label for the effects tool"
+  },
   "paint.modeTools.alignCenter": {
     "message": "Center",
     "description": "Label for the text align center button"
@@ -23,6 +27,14 @@
     "message": "Right",
     "description": "Label for the text align right button"
   },
+  "paint.modeTools.blendMixed": {
+    "message": "Mixed",
+    "description": "Shown in the blend mode dropdown when selected shapes have different blend modes"
+  },
+  "paint.modeTools.blendMode": {
+    "message": "Blend",
+    "description": "Label for the dropdown that sets a shape's blending mode"
+  },
   "paint.modeTools.center": {
     "message": "Center",
     "description": "Label for the button that moves the selected objects to the center of the canvas"
@@ -38,6 +50,30 @@
   "paint.modeTools.polygonSides": {
     "message": "Sides",
     "description": "Label for the polygon side count input"
+  },
+  "paint.paintEditor.effectsBrightness": {
+    "message": "Brightness",
+    "description": "Label for dropdown for the brightness effect"
+  },
+  "paint.paintEditor.effectsColor": {
+    "message": "Color",
+    "description": "Label for dropdown for the color effect"
+  },
+  "paint.paintEditor.effectsHueShift": {
+    "message": "Hue Shift",
+    "description": "Label for dropdown for the hue shift effect"
+  },
+  "paint.paintEditor.effectsOpacity": {
+    "message": "Opacity",
+    "description": "Label for dropdown for the opacity effect"
+  },
+  "paint.paintEditor.effectsPosterize": {
+    "message": "Posterize",
+    "description": "Label for dropdown for the posterize effect"
+  },
+  "paint.paintEditor.effectsSaturate": {
+    "message": "Saturate",
+    "description": "Label for dropdown for the saturate effect"
   },
   "paint.paintEditor.filter": {
     "message": "Filter",

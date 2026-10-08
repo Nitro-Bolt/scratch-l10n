@@ -132,7 +132,5 @@
     "nb.leftChannel": "Canal gauche",
     "nb.openDebugger": "Ouvrir le débogueur",
     "nb.rightChannel": "Canal droit",
-    "nb.settingsModal.penTiling": "Tuilage de Stylos",
-    "nb.settingsModal.penTilingHelp": "Permet à l'extension Stylo de dessiner, d'apposer des tampons et d'afficher des éléments au-delà de la scène en utilisant des textures tuilées. Peut augmenter la consommation de mémoire et le coût de rendu.",
     "tw.guiDefaultTitle": "Au-delà des limites"
 }

@@ -197,6 +197,12 @@
   "nb.editorSettings.hideBackpackHelp": {
     "message": "Removes the backpack from the bottom of the screen."
   },
+  "nb.editorSettings.hideExtendableArrowSeparator": {
+    "message": "Hide extendable middle line"
+  },
+  "nb.editorSettings.hideExtendableArrowSeparatorHelp": {
+    "message": "Hides the middle line between arrows on extendables that accept arrays."
+  },
   "nb.editorSettings.hideFeedback": {
     "message": "Hide feedback button"
   },
@@ -394,6 +400,14 @@
   "nb.editorSettings.waveformRenderTypeHelp": {
     "message": "Choose between sharp edges on sound waveforms or soft edges like in Scratch. Sharp edges can offer more detail on large sounds."
   },
+  "nb.effectParams.apply": {
+    "message": "Apply",
+    "description": "Button that applies an effect in the paint editor"
+  },
+  "nb.effectParams.cancel": {
+    "message": "Cancel",
+    "description": "Button that cancels an effect in the paint editor"
+  },
   "nb.extensionManager.title": {
     "message": "Extension Manager",
     "description": "Title of modal that appears when loading the Extension Manager"
@@ -432,14 +446,6 @@
   "nb.rightChannel": {
     "message": "Right Channel",
     "description": "Label for right waveform"
-  },
-  "nb.settingsModal.penTiling": {
-    "message": "Pen Tiling",
-    "description": "Pen tiling setting"
-  },
-  "nb.settingsModal.penTilingHelp": {
-    "message": "Allows the Pen extension to draw, stamp, and print beyond the stage using tiled textures. May increase memory usage and rendering cost.",
-    "description": "Pen tiling setting help"
   },
   "tw.guiDefaultTitle": {
     "message": "Beyond Limitations",

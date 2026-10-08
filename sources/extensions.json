@@ -1,4 +1,89 @@
 {
+  "nb.camera.allCameras": {
+    "message": "all cameras"
+  },
+  "nb.camera.bindCamera": {
+    "message": "bind [TARGETS] to [CAMERAS] camera"
+  },
+  "nb.camera.cameraDirection": {
+    "message": "[CAMERAS] camera direction"
+  },
+  "nb.camera.cameraXPosition": {
+    "message": "[CAMERAS] camera x position"
+  },
+  "nb.camera.cameraYPosition": {
+    "message": "[CAMERAS] camera y position"
+  },
+  "nb.camera.cameraZoom": {
+    "message": "[CAMERAS] camera zoom"
+  },
+  "nb.camera.changeCameraBy": {
+    "message": "change [CAMERAS] camera by x: [X] y: [Y]"
+  },
+  "nb.camera.changeCameraX": {
+    "message": "change [CAMERAS] camera x by [X]"
+  },
+  "nb.camera.changeCameraY": {
+    "message": "change [CAMERAS] camera y by [Y]"
+  },
+  "nb.camera.changeCameraZoom": {
+    "message": "change [CAMERAS] camera zoom by [SIZE]"
+  },
+  "nb.camera.createCamera": {
+    "message": "create camera named [CAMERA]"
+  },
+  "nb.camera.currentCamera": {
+    "message": "camera of [TARGETS]"
+  },
+  "nb.camera.deleteCamera": {
+    "message": "delete camera named [CAMERA]"
+  },
+  "nb.camera.mouseX": {
+    "message": "camera mouse x"
+  },
+  "nb.camera.mouseY": {
+    "message": "camera mouse y"
+  },
+  "nb.camera.moveCamera": {
+    "message": "move [CAMERAS] camera to x: [X] y: [Y]"
+  },
+  "nb.camera.moveCameraSteps": {
+    "message": "move [CAMERAS] camera [STEPS] steps"
+  },
+  "nb.camera.moveCameraToTarget": {
+    "message": "move [CAMERAS] camera to [TARGETS]"
+  },
+  "nb.camera.name": {
+    "message": "Camera",
+    "description": "Name of the NitroBolt camera extension"
+  },
+  "nb.camera.pointCameraTowardsTarget": {
+    "message": "point [CAMERAS] camera towards [TARGETS]"
+  },
+  "nb.camera.setCameraDirection": {
+    "message": "set [CAMERAS] camera direction to [DIRECTION]"
+  },
+  "nb.camera.setCameraX": {
+    "message": "set [CAMERAS] camera x to [X]"
+  },
+  "nb.camera.setCameraY": {
+    "message": "set [CAMERAS] camera y to [Y]"
+  },
+  "nb.camera.setCameraZoom": {
+    "message": "set [CAMERAS] camera zoom to [SIZE] %"
+  },
+  "nb.camera.target.myself": {
+    "message": "myself"
+  },
+  "nb.camera.target.stage": {
+    "message": "Stage"
+  },
+  "nb.camera.turnCameraLeft": {
+    "message": "turn [CAMERAS] camera [ICON] [DEGREES] degrees"
+  },
+  "nb.camera.turnCameraRight": {
+    "message": "turn [CAMERAS] camera [ICON] [DEGREES] degrees"
+  },
   "nb.debugger.breakpoint": {
     "message": "breakpoint"
   },
