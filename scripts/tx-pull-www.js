@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env -S tsx
 
 /**
  * @fileoverview
@@ -29,7 +29,6 @@ if (!process.env.TX_TOKEN || args.length < 1) {
 
 import fs from 'fs';
 import path from 'path';
-import mkdirp from 'mkdirp';
 import {txPull, txResources} from '../lib/transifex.js';
 import locales, {localeMap} from '../src/supported-locales.js';
 import {batchMap} from '../lib/batch.js';
@@ -51,7 +50,7 @@ const getLocaleData = async function (item) {
             const translations = await txPull(PROJECT, resource, txLocale);
             
             const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
-            mkdirp.sync(txOutdir);
+            fs.mkdirSync(txOutdir, {recursive: true});
             const fileName = `${txOutdir}/${locale}.json`;
             fs.writeFileSync(
                 fileName,

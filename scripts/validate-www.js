@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env -S tsx
 
 /**
  * @fileoverview
@@ -8,7 +8,7 @@
 const args = process.argv.slice(2);
 const usage = `
  Validate translation json. Usage:
-   babel-node validate_www.js path
+   tsx validate-www.js path
      path: root folder for all the www resource folders
  `;
 if (args.length < 1) {
@@ -17,14 +17,14 @@ if (args.length < 1) {
 }
 import fs from 'fs';
 import path from 'path';
-import glob from 'glob';
+import {globSync} from 'glob';
 import async from 'async';
 import {validateTranslations} from '../lib/validate.js';
 import locales from '../src/supported-locales.js';
 
 // Globals
 const WWW_DIR = path.resolve(args[0]);
-const RESOURCES = glob.sync(`${path.resolve(WWW_DIR)}/*`);
+const RESOURCES = globSync(`${path.resolve(WWW_DIR)}/*`);
 
 const validate = (localeData, callback) => {
     fs.readFile(localeData.localeFileName, function (err, data) {

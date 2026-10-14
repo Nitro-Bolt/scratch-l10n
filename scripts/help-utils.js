@@ -8,7 +8,6 @@
 const FreshdeskApi = require('./freshdesk-api.js');
 const fs = require('fs');
 const fsPromises = fs.promises;
-const mkdirp = require('mkdirp');
 const {txPull, txResourcesObjects, txAvailableLanguages} = require('../lib/transifex.js');
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
@@ -143,7 +142,7 @@ exports.localizeFolder = async (folder, locale) => {
  * @return {Promise}        [description]
  */
 exports.debugFolder = async (folder, locale) => {
-    mkdirp.sync('tmpDebug');
+    fs.mkdirSync('tmpDebug', {recursive: true});
     txPull(TX_PROJECT, folder.slug, locale, {mode: 'default'})
         .then(data => {
             fsPromises.writeFile(

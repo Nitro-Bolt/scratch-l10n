@@ -1,11 +1,10 @@
 // interface to FreshDesk Solutions (knowledge base) api
 
-const fetch = require('node-fetch');
 class FreshdeskApi {
 
     constructor (baseUrl, apiKey) {
         this.baseUrl = baseUrl;
-        this._auth = 'Basic ' + new Buffer(`${apiKey}:X`).toString('base64');
+        this._auth = 'Basic ' + Buffer.from(`${apiKey}:X`).toString('base64');
         this.defaultHeaders = {
             'Content-Type': 'application/json',
             'Authorization': this._auth

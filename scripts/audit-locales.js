@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env -S tsx
 
 const fs = require('fs');
 const path = require('path');

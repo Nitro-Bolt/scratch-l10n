@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
-const glob = require('glob');
+const {globSync} = require('glob');
 const path = require('path');
-const mkdirp = require('mkdirp');
 
 var args = process.argv.slice(2);
 
@@ -27,7 +26,7 @@ const ID_PREFIX = args.shift();
 // there are conflicting messages in different components that use the same `id`. The result
 // is a chromei18n format collection of `id: {message: defaultMessage,
 // description: description}` pairs for the app's default locale.
-let defaultMessages = glob.sync(MESSAGES_PATTERN)
+let defaultMessages = globSync(MESSAGES_PATTERN)
     .map((filename) => fs.readFileSync(filename, 'utf8'))
     .map((file) => JSON.parse(file))
     .reduce((collection, descriptors) => {
@@ -47,5 +46,5 @@ let defaultMessages = glob.sync(MESSAGES_PATTERN)
         return collection;
     }, {});
 
-mkdirp.sync(LANG_DIR);
+fs.mkdirSync(LANG_DIR, {recursive: true});
 fs.writeFileSync(path.join(LANG_DIR, 'en.json'), JSON.stringify(defaultMessages, null, 2));

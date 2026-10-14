@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env -S tsx
 
 /**
  * @fileoverview
@@ -8,7 +8,7 @@
 const args = process.argv.slice(2);
 const usage = `
  Validate translation json. Usage:
-   babel-node validate_translations.js path
+   tsx validate-translations.js path
      path: where to find the downloaded json files
  `;
 // Fail immediately if the TX_TOKEN is not defined

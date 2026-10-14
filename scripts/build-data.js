@@ -40,7 +40,6 @@ Missing locales are ignored, react-intl will use the default messages for them.
  */
 import * as fs from 'fs';
 import * as path from 'path';
-import {sync as mkdirpSync} from 'mkdirp';
 import defaultsDeep from 'lodash.defaultsdeep';
 import locales from '../src/supported-locales.js';
 import allUsedIds from './tw-all-used-ids.json';
@@ -50,7 +49,7 @@ const MSGS_DIR = './locales/';
 const TURBOWARP_TRANSLATIONS = './turbowarp-translations.json';
 const OVERRIDES_DIR = './overrides/editor/';
 const SOURCES_DIR = './sources/';
-mkdirpSync(MSGS_DIR);
+fs.mkdirSync(MSGS_DIR, {recursive: true});
 let missingLocales = [];
 const turbowarpTranslations = JSON.parse(fs.readFileSync(TURBOWARP_TRANSLATIONS, 'utf8'));
 
