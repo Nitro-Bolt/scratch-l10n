@@ -1,12 +1,27 @@
 {
     "nb.paint.recentColors": "Colores Recientes",
     "paint.colorPicker.customGradient": "Degradado personalizado",
+    "paint.fillMode.effects": "Efectos",
+    "paint.modeTools.alignCenter": "Centrar",
+    "paint.modeTools.alignJustify": "Justificar",
+    "paint.modeTools.alignLeft": "izquierda",
+    "paint.modeTools.alignRight": "Derecha",
+    "paint.modeTools.blendMixed": "Mezclado",
+    "paint.modeTools.blendMode": "Fusión",
     "paint.modeTools.center": "Centro",
     "paint.modeTools.cut": "Cortar",
+    "paint.modeTools.polygonRadius": "Radio de esquina",
+    "paint.modeTools.polygonSides": "Lados",
+    "paint.paintEditor.effectsBrightness": "Brillo",
+    "paint.paintEditor.effectsHueShift": "Cambio de Tono",
+    "paint.paintEditor.effectsOpacity": "Opacidad",
+    "paint.paintEditor.effectsPosterize": "Posterizar",
+    "paint.paintEditor.effectsSaturate": "Saturar",
     "paint.paintEditor.filter": "Filtrar",
     "paint.paintEditor.mask": "Mascara",
     "paint.paintEditor.masktools": "Booleanos",
     "paint.paintEditor.merge": "Combinar",
     "paint.paintEditor.subtract": "Restar",
-    "paint.paintEditor.swap": "Intercambiar"
+    "paint.paintEditor.swap": "Intercambiar",
+    "paint.polygonMode.polygon": "Polígono"
 }
