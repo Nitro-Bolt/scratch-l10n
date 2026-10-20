@@ -100,6 +100,9 @@
   "nb.editorSettings.blockColorsHelp": {
     "message": "Customize the primary color of each block category."
   },
+  "nb.editorSettings.blockSelection": {
+    "message": "Block selection"
+  },
   "nb.editorSettings.blockShapePresets": {
     "message": "Presets"
   },
@@ -135,6 +138,12 @@
   },
   "nb.editorSettings.darkModeHelp": {
     "message": "Turns the website dark to make it easier on the eyes."
+  },
+  "nb.editorSettings.deselectBlockSelectionAfterAction": {
+    "message": "Deselect multi-selection after actions"
+  },
+  "nb.editorSettings.deselectBlockSelectionAfterActionHelp": {
+    "message": "Clears selected blocks after you act on them. When disabled, selections remain until you click elsewhere."
   },
   "nb.editorSettings.dirty": {
     "message": "Refresh to apply settings"
@@ -214,6 +223,12 @@
   },
   "nb.editorSettings.hidePauseHelp": {
     "message": "Removes the pause button from the project controls."
+  },
+  "nb.editorSettings.inwardSelection": {
+    "message": "Inward block selection"
+  },
+  "nb.editorSettings.inwardSelectionHelp": {
+    "message": "Requires blocks or scripts to be fully enclosed by the selection box. When disabled, touching them is enough."
   },
   "nb.editorSettings.keymap.changeSpriteName": {
     "message": "Change sprite name"
@@ -325,6 +340,12 @@
   },
   "nb.editorSettings.stageLeftHelp": {
     "message": "Swaps the stage and the block palette."
+  },
+  "nb.editorSettings.swapMultiSelectModifiers": {
+    "message": "Swap multi-selection controls"
+  },
+  "nb.editorSettings.swapMultiSelectModifiersHelp": {
+    "message": "Uses Ctrl for selecting whole scripts and Shift for selecting individual blocks."
   },
   "nb.editorSettings.theme": {
     "message": "Theme"

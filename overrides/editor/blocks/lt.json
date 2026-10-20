@@ -55,9 +55,6 @@
     "NEW_VARIABLE_OPTION": "Naujas kintamasis",
     "OPERATORS_AND_EXTENDABLE_SEPARATOR": "ir",
     "OPERATORS_OR_EXTENDABLE_SEPARATOR": "arba",
-    "RENAME_TABLE": "Pervadinti lentelė",
-    "RENAME_TABLE_MODAL_TITLE": "Pervadinti Lentelė",
-    "RENAME_TABLE_TITLE": "Pervadinti visus \"%1\" lenteles į:",
     "TABLE_ALREADY_EXISTS": "Jau egzistuoja lentelė pavadinta \"%1\".",
     "TABLE_MODAL_TITLE": "Nauja lentelė"
 }

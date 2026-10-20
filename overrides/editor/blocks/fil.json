@@ -41,9 +41,6 @@
     "NEW_TABLE_OPTION": "Bagong table",
     "NEW_TABLE_TITLE": "Pangalan ng bagong table:",
     "NEW_VARIABLE_OPTION": "Bagong variable",
-    "RENAME_TABLE": "I-rename ang table",
-    "RENAME_TABLE_MODAL_TITLE": "I-rename ang Table",
-    "RENAME_TABLE_TITLE": "I-rename lahat ng mga table na \"%1\" ng:",
     "TABLE_ALREADY_EXISTS": "Meron na'ng table na \"%1\".",
     "TABLE_MODAL_TITLE": "Bagong Table"
 }
