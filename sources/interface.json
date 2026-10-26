@@ -317,6 +317,12 @@
   "nb.editorSettings.personal": {
     "message": "Personal"
   },
+  "nb.editorSettings.pixelUploadSize": {
+    "message": "Bitmap file upload doubling"
+  },
+  "nb.editorSettings.pixelUploadSizeHelp": {
+    "message": "Toggle whether Bitmap file uploads in the paint editor are doubled or not, and change how it displays their sizes."
+  },
   "nb.editorSettings.presets": {
     "message": "Presets"
   },
