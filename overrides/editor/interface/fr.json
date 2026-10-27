@@ -97,6 +97,8 @@
     "nb.editorSettings.paddingSizeHelp": "Contrôle la taille globale et l'espacement des blocs.",
     "nb.editorSettings.paintSection": "Dessin",
     "nb.editorSettings.personal": "Sur mesure",
+    "nb.editorSettings.pixelUploadSize": "Doublement des fichiers bitmap téléversés",
+    "nb.editorSettings.pixelUploadSizeHelp": "Activez ou désactivez le doublement des fichiers bitmap importés dans l’éditeur de dessin, et modifiez la manière dont leurs dimensions sont affichées.",
     "nb.editorSettings.presets": "Préréglages",
     "nb.editorSettings.resetBlockColors": "Rétablir les paramètres par défaut",
     "nb.editorSettings.resetCategoriesVisibility": "Rétablir les paramètres par défaut",

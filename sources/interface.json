@@ -272,11 +272,23 @@
   "nb.editorSettings.labelContrastThresholdHelp": {
     "message": "Sets how bright a block color must be before its text label switches to dark for readability. Lower values use dark text less often, higher values use dark text more often."
   },
+  "nb.editorSettings.legacyModals": {
+    "message": "Legacy modal style"
+  },
+  "nb.editorSettings.legacyModalsHelp": {
+    "message": "Uses TurboWarp's modal style instead of the modern style."
+  },
   "nb.editorSettings.maxCornerRadius": {
     "message": "Max corner radius (1x-12x):"
   },
   "nb.editorSettings.maxCornerRadiusHelp": {
     "message": "Sets an upper limit on the corner radius as a multiple of the base corner size, used by round output blocks."
+  },
+  "nb.editorSettings.modalOverlayBlur": {
+    "message": "Modal overlay blur:"
+  },
+  "nb.editorSettings.modalOverlayBlurHelp": {
+    "message": "The intensity, in pixels, of the blur effect on the UI behind modals."
   },
   "nb.editorSettings.noCutButton": {
     "message": "Hide cut button"
@@ -439,18 +451,276 @@
     "message": "Extension Manager",
     "description": "Title of modal that appears when loading the Extension Manager"
   },
+  "nb.git.addRemote": {
+    "message": "Add remote"
+  },
+  "nb.git.branch": {
+    "message": "Branch"
+  },
+  "nb.git.branchPlaceholder": {
+    "message": "feature/name"
+  },
+  "nb.git.branches": {
+    "message": "Branches"
+  },
+  "nb.git.cancel": {
+    "message": "Cancel"
+  },
+  "nb.git.changedFiles": {
+    "message": "{count, plural, one {# changed file} other {# changed files}}"
+  },
+  "nb.git.changes": {
+    "message": "Changes"
+  },
+  "nb.git.checkingFolder": {
+    "message": "Checking the selected folder…"
+  },
+  "nb.git.chooseAnotherFolder": {
+    "message": "Choose another folder"
+  },
+  "nb.git.chooseDescription": {
+    "message": "Choose a project folder that already contains a repository, or select a folder to initialize."
+  },
+  "nb.git.chooseDestination": {
+    "message": "Choose destination branch…"
+  },
+  "nb.git.chooseFolder": {
+    "message": "Choose folder"
+  },
+  "nb.git.chooseSource": {
+    "message": "Choose source branch…"
+  },
+  "nb.git.commit": {
+    "message": "Commit"
+  },
+  "nb.git.commitAmend": {
+    "message": "Commit (Amend)"
+  },
+  "nb.git.commitLabel": {
+    "message": "Commit"
+  },
+  "nb.git.commitMessage": {
+    "message": "Commit message"
+  },
+  "nb.git.commitPush": {
+    "message": "Commit & Push"
+  },
+  "nb.git.commitSync": {
+    "message": "Commit & Sync"
+  },
+  "nb.git.confirm": {
+    "message": "Click again to confirm"
+  },
+  "nb.git.confirmButton": {
+    "message": "Confirm"
+  },
+  "nb.git.confirmDiscardAll": {
+    "message": "Click again to confirm discard all"
+  },
+  "nb.git.conflicts": {
+    "message": "Conflicts"
+  },
+  "nb.git.controls": {
+    "message": "Merging & Controls"
+  },
+  "nb.git.create": {
+    "message": "Create"
+  },
+  "nb.git.current": {
+    "message": "current"
+  },
+  "nb.git.delete": {
+    "message": "Delete"
+  },
   "nb.git.desktopOnly": {
     "message": "Git is only available in NitroBolt Desktop."
+  },
+  "nb.git.detachedHead": {
+    "message": "Detached HEAD"
+  },
+  "nb.git.diff.after": {
+    "message": "After"
+  },
+  "nb.git.diff.before": {
+    "message": "Before"
+  },
+  "nb.git.diff.binaryChanged": {
+    "message": "Binary asset changed. Git stores this file without noisy text diffs."
+  },
+  "nb.git.diff.blockRenderError": {
+    "message": "Unable to render block XML: {error}"
+  },
+  "nb.git.diff.close": {
+    "message": "Close Diff"
+  },
+  "nb.git.diff.goToScript": {
+    "message": "Go to script"
+  },
+  "nb.git.diff.noBlockXml": {
+    "message": "No block XML is available for this revision."
+  },
+  "nb.git.diff.noChangedScripts": {
+    "message": "No changed scripts."
+  },
+  "nb.git.diff.noScript": {
+    "message": "No script"
+  },
+  "nb.git.diff.noTextChanges": {
+    "message": "No textual changes."
+  },
+  "nb.git.diff.position": {
+    "message": "Position: {x}, {y}"
+  },
+  "nb.git.diffHint": {
+    "message": "Its diff will open here."
+  },
+  "nb.git.discardAll": {
+    "message": "Discard all changes"
+  },
+  "nb.git.discardManaged": {
+    "message": "Use Discard all to remove this project change safely"
+  },
+  "nb.git.dismissError": {
+    "message": "Dismiss error"
+  },
+  "nb.git.enterBranchName": {
+    "message": "Enter a branch name."
+  },
+  "nb.git.enterCommitMessage": {
+    "message": "Enter a commit message."
+  },
+  "nb.git.enterRemote": {
+    "message": "Enter a remote name and URL."
+  },
+  "nb.git.general": {
+    "message": "General"
+  },
+  "nb.git.gitSourceControl": {
+    "message": "Git source control"
+  },
+  "nb.git.history": {
+    "message": "History"
+  },
+  "nb.git.initializeDescription": {
+    "message": "Initialize this folder to begin tracking its project files and assets."
+  },
+  "nb.git.initializeRepository": {
+    "message": "Initialize Repository"
+  },
+  "nb.git.intoBranch": {
+    "message": "Into branch"
   },
   "nb.git.loadProjectFolder": {
     "message": "Load Git project folder",
     "description": "Loads a NitroBolt Git project folder"
   },
+  "nb.git.local": {
+    "message": "Local"
+  },
+  "nb.git.merge": {
+    "message": "Merge"
+  },
+  "nb.git.mergeBranch": {
+    "message": "Merge branch"
+  },
   "nb.git.missing": {
     "message": "Git is not installed or could not be found."
   },
+  "nb.git.moreCommitActions": {
+    "message": "More commit actions"
+  },
+  "nb.git.newBranch": {
+    "message": "New branch"
+  },
+  "nb.git.noCommits": {
+    "message": "No commits"
+  },
+  "nb.git.noLocalBranches": {
+    "message": "No local branches"
+  },
+  "nb.git.noRemoteBranches": {
+    "message": "No remote branches"
+  },
+  "nb.git.noRemotes": {
+    "message": "No remotes"
+  },
+  "nb.git.notRepository": {
+    "message": "This folder is not a Git repository yet."
+  },
+  "nb.git.operationFailed": {
+    "message": "Git operation failed."
+  },
+  "nb.git.pull": {
+    "message": "Pull"
+  },
+  "nb.git.push": {
+    "message": "Push"
+  },
+  "nb.git.readme": {
+    "message": "README"
+  },
+  "nb.git.refresh": {
+    "message": "Refresh"
+  },
+  "nb.git.remote": {
+    "message": "Remote"
+  },
+  "nb.git.remoteSync": {
+    "message": "Remote sync"
+  },
+  "nb.git.remotes": {
+    "message": "Remotes"
+  },
+  "nb.git.remove": {
+    "message": "Remove"
+  },
+  "nb.git.rename": {
+    "message": "Rename"
+  },
+  "nb.git.revertCommit": {
+    "message": "Revert to this commit"
+  },
+  "nb.git.save": {
+    "message": "Save"
+  },
+  "nb.git.saveReadme": {
+    "message": "Save README.md"
+  },
+  "nb.git.selectChangedFile": {
+    "message": "Select a changed file"
+  },
+  "nb.git.selectedFolder": {
+    "message": "Selected folder"
+  },
+  "nb.git.setupSourceControl": {
+    "message": "Set up source control"
+  },
+  "nb.git.sourceControlDescription": {
+    "message": "Track your NitroBolt project, review changes, and work with branches."
+  },
+  "nb.git.stage": {
+    "message": "Stage"
+  },
+  "nb.git.stageAll": {
+    "message": "Stage all"
+  },
+  "nb.git.staged": {
+    "message": "Staged"
+  },
   "nb.git.title": {
     "message": "Source Control"
+  },
+  "nb.git.undoChange": {
+    "message": "Undo change"
+  },
+  "nb.git.unstage": {
+    "message": "Unstage"
+  },
+  "nb.git.unstageAll": {
+    "message": "Unstage all"
+  },
+  "nb.git.workingTreeClean": {
+    "message": "Working tree clean"
   },
   "nb.keyInput.listening": {
     "message": "Listening..."
