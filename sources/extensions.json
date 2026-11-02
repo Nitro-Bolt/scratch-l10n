@@ -146,6 +146,10 @@
     "message": "all papers",
     "description": "report the names of all pen drawing layers"
   },
+  "pen.changePrintColorParam": {
+    "message": "change print [TARGET] [COLOR_PARAM] by [VALUE]",
+    "description": "change a fill or outline color parameter used by the pen print block"
+  },
   "pen.clearPaper": {
     "message": "erase paper named [PAPER]",
     "description": "erase all pen trails and stamps from a named pen drawing layer"
@@ -213,6 +217,10 @@
   "pen.setPrintColor": {
     "message": "set print [TARGET] color to [COLOR]",
     "description": "set the fill or outline color used by the pen print block"
+  },
+  "pen.setPrintColorParam": {
+    "message": "set print [TARGET] [COLOR_PARAM] to [VALUE]",
+    "description": "set a fill or outline color parameter used by the pen print block"
   },
   "pen.setPrintFont": {
     "message": "set print font to [FONT]",

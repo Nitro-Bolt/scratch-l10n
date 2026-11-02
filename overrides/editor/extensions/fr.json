@@ -7,7 +7,7 @@
     "nb.camera.cameraZoom": "zoom de caméra [CAMERAS]",
     "nb.camera.changeCameraBy": "dans la caméra [CAMERAS] ajouter x: [X] y: [Y]",
     "nb.camera.changeCameraX": "dans la caméra [CAMERAS] ajouter x par [X]",
-    "nb.camera.changeCameraY": "dans la caméra [CAMERAS] ajouter x par [Y]",
+    "nb.camera.changeCameraY": "dans la caméra [CAMERAS] ajouter y par [Y]",
     "nb.camera.changeCameraZoom": "dans la caméra [CAMERAS] ajouter le zoom par [SIZE]",
     "nb.camera.createCamera": "créer caméra nommée [CAMERA]",
     "nb.camera.currentCamera": "caméra de [TARGETS]",
