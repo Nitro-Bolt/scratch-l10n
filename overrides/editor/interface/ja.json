@@ -62,11 +62,9 @@
     "nb.editorSettings.keymap.changeSpriteName": "スプライトの名前を変える",
     "nb.editorSettings.keymap.openBackpack": "バックパックを開く",
     "nb.editorSettings.keymap.openEditorSettings": "エディター設定を開く",
-    "nb.editorSettings.keymap.openExtentions": "拡張機能カタログを開く",
     "nb.editorSettings.keymap.popups": "ポップアップ",
     "nb.editorSettings.keymap.projectControls": "プロジェクトのコントロール",
     "nb.editorSettings.keymap.projectFullScreen": "プロジェクトのフルスクリーンを切り替える",
-    "nb.editorSettings.keymap.spriteSettings": "スプライトの設定",
     "nb.editorSettings.keymap.spriteVisibility": "スプライトの表示・非表示を切り替える",
     "nb.editorSettings.keymap.startProject": "プロジェクトを開始",
     "nb.editorSettings.keymap.stopProject": "プロジェクトを停止",
@@ -125,7 +123,6 @@
     "nb.keyInput.listening": "聞いています...",
     "nb.keyInput.none": "未設定",
     "nb.leftChannel": "左チャンネル",
-    "nb.openDebugger": "デバッガーを開く",
     "nb.rightChannel": "右チャンネル",
     "tw.guiDefaultTitle": "限界のさらに先へ"
 }

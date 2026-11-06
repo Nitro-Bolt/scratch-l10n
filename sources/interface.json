@@ -260,17 +260,116 @@
   "nb.editorSettings.inwardSelectionHelp": {
     "message": "Requires blocks or scripts to be fully enclosed by the selection box. When disabled, touching them is enough."
   },
+  "nb.editorSettings.keymap.assetsTab": {
+    "message": "Assets tab"
+  },
+  "nb.editorSettings.keymap.blockEditor": {
+    "message": "Block Editor"
+  },
+  "nb.editorSettings.keymap.blockZoomIn": {
+    "message": "Zoom in"
+  },
+  "nb.editorSettings.keymap.blockZoomOut": {
+    "message": "Zoom out"
+  },
   "nb.editorSettings.keymap.changeSpriteName": {
     "message": "Change sprite name"
+  },
+  "nb.editorSettings.keymap.codeTab": {
+    "message": "Code tab"
+  },
+  "nb.editorSettings.keymap.costumeEditor": {
+    "message": "Paint"
+  },
+  "nb.editorSettings.keymap.costumesTab": {
+    "message": "Costumes tab"
+  },
+  "nb.editorSettings.keymap.createComment": {
+    "message": "Create comment"
+  },
+  "nb.editorSettings.keymap.createGroup": {
+    "message": "Create group"
+  },
+  "nb.editorSettings.keymap.file": {
+    "message": "File"
+  },
+  "nb.editorSettings.keymap.newProject": {
+    "message": "New project"
+  },
+  "nb.editorSettings.keymap.newProjectHelp": {
+    "message": "For security reasons, Ctrl+N cannot be used in browsers."
+  },
+  "nb.editorSettings.keymap.newWindow": {
+    "message": "New window"
   },
   "nb.editorSettings.keymap.openBackpack": {
     "message": "Open backpack"
   },
+  "nb.editorSettings.keymap.openDebugger": {
+    "message": "Open debugger"
+  },
   "nb.editorSettings.keymap.openEditorSettings": {
     "message": "Open editor settings"
   },
-  "nb.editorSettings.keymap.openExtentions": {
+  "nb.editorSettings.keymap.openExtensionManager": {
+    "message": "Open extension manager"
+  },
+  "nb.editorSettings.keymap.openExtensions": {
     "message": "Open extension catalog"
+  },
+  "nb.editorSettings.keymap.openProject": {
+    "message": "Open project"
+  },
+  "nb.editorSettings.keymap.openProjectSettings": {
+    "message": "Open project settings"
+  },
+  "nb.editorSettings.keymap.openSourceControl": {
+    "message": "Open source control"
+  },
+  "nb.editorSettings.keymap.packageProject": {
+    "message": "Package project"
+  },
+  "nb.editorSettings.keymap.paintBrush": {
+    "message": "Brush"
+  },
+  "nb.editorSettings.keymap.paintEffect": {
+    "message": "Effect"
+  },
+  "nb.editorSettings.keymap.paintEraser": {
+    "message": "Eraser"
+  },
+  "nb.editorSettings.keymap.paintFill": {
+    "message": "Fill"
+  },
+  "nb.editorSettings.keymap.paintGroup": {
+    "message": "Group"
+  },
+  "nb.editorSettings.keymap.paintLine": {
+    "message": "Line"
+  },
+  "nb.editorSettings.keymap.paintOval": {
+    "message": "Oval"
+  },
+  "nb.editorSettings.keymap.paintPen": {
+    "message": "Pen"
+  },
+  "nb.editorSettings.keymap.paintPolygon": {
+    "message": "Polygon/Rect"
+  },
+  "nb.editorSettings.keymap.paintReshape": {
+    "message": "Reshape"
+  },
+  "nb.editorSettings.keymap.paintSelect": {
+    "message": "Select"
+  },
+  "nb.editorSettings.keymap.paintText": {
+    "message": "Text"
+  },
+  "nb.editorSettings.keymap.paintUngroup": {
+    "message": "Ungroup"
+  },
+  "nb.editorSettings.keymap.pauseProject": {
+    "message": "Pause project"
   },
   "nb.editorSettings.keymap.popups": {
     "message": "Popups"
@@ -281,17 +380,50 @@
   "nb.editorSettings.keymap.projectFullScreen": {
     "message": "Toggle project full screen"
   },
-  "nb.editorSettings.keymap.spriteSettings": {
-    "message": "Sprite Settings"
+  "nb.editorSettings.keymap.redo": {
+    "message": "Redo"
+  },
+  "nb.editorSettings.keymap.save": {
+    "message": "Save project"
+  },
+  "nb.editorSettings.keymap.soundsTab": {
+    "message": "Sounds tab"
+  },
+  "nb.editorSettings.keymap.spritePane": {
+    "message": "Sprite Pane"
   },
   "nb.editorSettings.keymap.spriteVisibility": {
     "message": "Toggle sprite visibility"
   },
+  "nb.editorSettings.keymap.sprites": {
+    "message": "Sprites"
+  },
+  "nb.editorSettings.keymap.stageAndSpritePaneVisibility": {
+    "message": "Toggle stage and sprite pane visibility"
+  },
   "nb.editorSettings.keymap.startProject": {
     "message": "Start project"
   },
+  "nb.editorSettings.keymap.stepProject": {
+    "message": "Step through project"
+  },
+  "nb.editorSettings.keymap.stepProjectHelp": {
+    "message": "Only available with the compiler disabled."
+  },
   "nb.editorSettings.keymap.stopProject": {
     "message": "Stop project"
+  },
+  "nb.editorSettings.keymap.tabs": {
+    "message": "Tabs"
+  },
+  "nb.editorSettings.keymap.undo": {
+    "message": "Undo"
+  },
+  "nb.editorSettings.keymap.utils": {
+    "message": "Utilities"
+  },
+  "nb.editorSettings.keymap.variablesTab": {
+    "message": "Variables tab"
   },
   "nb.editorSettings.keymapSection": {
     "message": "Keymap"
@@ -735,11 +867,16 @@
     "message": "Listening..."
   },
   "nb.keyInput.none": {
-    "message": "Not set"
+    "message": "Not set",
+    "description": "Indicates that no keybind has been set for a specific action"
   },
   "nb.leftChannel": {
     "message": "Left Channel",
     "description": "Label for left waveform"
+  },
+  "nb.menuBar.downloadToComputer": {
+    "message": "Save project",
+    "description": "Menu bar item for downloading a project to your computer"
   },
   "nb.menuBar.git": {
     "message": "Git",
@@ -769,6 +906,14 @@
     "message": "Git is not installed",
     "description": "Disabled Git menu item shown when Git is unavailable"
   },
+  "nb.menuBar.new": {
+    "message": "New project",
+    "description": "Menu bar item for creating a new project"
+  },
+  "nb.menuBar.newWindow": {
+    "message": "New window",
+    "description": "Menu bar item that creates a new window."
+  },
   "nb.monitor.contextMenu.default": {
     "message": "Normal Readout",
     "description": "Menu item to switch to the default monitor"
@@ -797,13 +942,13 @@
     "message": "Change Slider Range",
     "description": "Menu item to change the slider range"
   },
-  "nb.openDebugger": {
-    "message": "Open debugger",
-    "description": "Button to open the debugger panel"
-  },
   "nb.rightChannel": {
     "message": "Right Channel",
     "description": "Label for right waveform"
+  },
+  "nb.sharedMessages.loadFromComputerTitle": {
+    "message": "Open project",
+    "description": "Title for uploading a project from your computer"
   },
   "nb.spriteSelectorItem.contextMenuDelete": {
     "message": "Delete",

@@ -71,11 +71,9 @@
     "nb.editorSettings.keymap.changeSpriteName": "Modifier le nom du sprite",
     "nb.editorSettings.keymap.openBackpack": "Ouvrir le sac à dos",
     "nb.editorSettings.keymap.openEditorSettings": "Ouvrir les paramètres de l’éditeur",
-    "nb.editorSettings.keymap.openExtentions": "Ouvrir le catalogue de les extensions",
     "nb.editorSettings.keymap.popups": "Fenêtres surgissantes",
     "nb.editorSettings.keymap.projectControls": "Contrôle de projet",
     "nb.editorSettings.keymap.projectFullScreen": "Basculer le projet en plein écran",
-    "nb.editorSettings.keymap.spriteSettings": "Paramètres des sprites",
     "nb.editorSettings.keymap.spriteVisibility": "Basculer la visibilité du sprite",
     "nb.editorSettings.keymap.startProject": "Démarrer le projet",
     "nb.editorSettings.keymap.stopProject": "Arrêter le projet",
@@ -215,7 +213,6 @@
     "nb.keyInput.listening": "Écoute...",
     "nb.keyInput.none": "Non défini",
     "nb.leftChannel": "Canal gauche",
-    "nb.openDebugger": "Ouvrir le débogueur",
     "nb.rightChannel": "Canal droit",
     "tw.guiDefaultTitle": "Au-delà des limites"
 }
