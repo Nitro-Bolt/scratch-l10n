@@ -317,6 +317,9 @@
   "nb.editorSettings.keymap.openExtensions": {
     "message": "Open extension catalog"
   },
+  "nb.editorSettings.keymap.openGitProject": {
+    "message": "Open Git project"
+  },
   "nb.editorSettings.keymap.openProject": {
     "message": "Open project"
   },
@@ -766,10 +769,6 @@
   "nb.git.intoBranch": {
     "message": "Into branch"
   },
-  "nb.git.loadProjectFolder": {
-    "message": "Load Git project folder",
-    "description": "Loads a NitroBolt Git project folder"
-  },
   "nb.git.local": {
     "message": "Local"
   },
@@ -796,6 +795,10 @@
   },
   "nb.git.noRemotes": {
     "message": "No remotes"
+  },
+  "nb.git.openProject": {
+    "message": "Open Git project",
+    "description": "Opens a NitroBolt Git project"
   },
   "nb.git.operationFailed": {
     "message": "Git operation failed."

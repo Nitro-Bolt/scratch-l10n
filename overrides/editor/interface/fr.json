@@ -180,7 +180,6 @@
     "nb.git.general": "Général",
     "nb.git.history": "Historique",
     "nb.git.intoBranch": "Vers la branche",
-    "nb.git.loadProjectFolder": "Charger le dossier du projet Git",
     "nb.git.merge": "Fusionner",
     "nb.git.mergeBranch": "Fusionner la branche",
     "nb.git.moreCommitActions": "Autres actions de validation",
