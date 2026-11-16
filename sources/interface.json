@@ -977,6 +977,10 @@
     "message": "Move to Top",
     "description": "Menu item to move an item to the top of the list"
   },
+  "nb.spriteSelectorItem.contextMenuReplaceCostume": {
+    "message": "Replace with...",
+    "description": "Menu item to replace a costume with an uploaded file"
+  },
   "nb.spriteSelectorItem.rename": {
     "message": "Rename",
     "description": "Menu item to rename an item"
