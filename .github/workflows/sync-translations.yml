@@ -17,14 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out scratch-l10n
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: scratch-l10n
           ref: develop
           token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-gui
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Nitro-Bolt/scratch-gui
           path: scratch-gui
@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-vm
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Nitro-Bolt/scratch-vm
           path: scratch-vm
@@ -40,7 +40,7 @@ jobs:
           token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-paint
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Nitro-Bolt/scratch-paint
           path: scratch-paint
@@ -48,7 +48,7 @@ jobs:
           token: ${{ secrets.AUTOMATION }}
 
       - name: Check out scratch-blocks
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Nitro-Bolt/scratch-blocks
           path: scratch-blocks
@@ -61,9 +61,9 @@ jobs:
           version: 10.33.0
 
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 26
           cache: pnpm
           cache-dependency-path: |
             scratch-l10n/pnpm-lock.yaml
