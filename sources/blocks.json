@@ -152,6 +152,8 @@
   "RENAME_BROADCAST": "Rename broadcast",
   "RENAME_BROADCAST_MODAL_TITLE": "Rename Broadcast",
   "RENAME_BROADCAST_TITLE": "Rename all \"%1\" broadcasts to:",
+  "RENAME_GROUP_MODAL_TITLE": "Rename Group",
+  "RENAME_GROUP_TITLE": "Group name:",
   "REPLACE_LIST": "Replace list",
   "REPLACE_LIST_TITLE": "Replace all \"%1\" lists with:",
   "REPLACE_TABLE": "Replace table",
